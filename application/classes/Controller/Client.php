@@ -26,10 +26,18 @@ class Controller_Client extends Controller_Template {
 
 
         $styles = array(
+            'content/css/bootstrap.min.css',
             'content/css/style.css',
+            'content/css/bootstrap-responsive.css',
+            'content/css/bootstrap-responsive.min.css',
+            'content/css/bootstrap.css',
+           // 'content/css/style1.css',
         );
         $scripts = array(
             'content/client_js/jquery.min.js',
+            'http://code.jquery.com/jquery-latest.js',
+            'content/js/bootstrap.js',
+            'content/js/bootstrap.min.js',
             'content/client_js/feedback.js'
         );
 
