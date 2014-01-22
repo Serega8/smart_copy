@@ -150,3 +150,34 @@
 #12 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #13 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
 #14 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/index.php:88
+2014-01-22 22:05:08 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: logotip ~ APPPATH/classes/Controller/Client.php [ 27 ] in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php:27
+2014-01-22 22:05:08 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(27): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/intellect...', 27, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(69): Controller_Client->before()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#4 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php:27
+2014-01-22 22:09:19 --- EMERGENCY: Kohana_Exception [ 0 ]: The images property does not exist in the Model_Articles class ~ MODPATH/orm/classes/Kohana/ORM.php [ 687 ] in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:603
+2014-01-22 22:09:19 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(603): Kohana_ORM->get('images')
+#1 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(43): Kohana_ORM->__get('images')
+#2 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(26): Model_Articles->article('logotip')
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(69): Controller_Client->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#9 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:603
+2014-01-22 22:09:45 --- EMERGENCY: Kohana_Exception [ 0 ]: The img property does not exist in the Model_Articles class ~ MODPATH/orm/classes/Kohana/ORM.php [ 687 ] in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:603
+2014-01-22 22:09:45 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(603): Kohana_ORM->get('img')
+#1 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(43): Kohana_ORM->__get('img')
+#2 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(26): Model_Articles->article('logotip')
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(69): Controller_Client->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#9 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:603

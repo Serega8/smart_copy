@@ -94,8 +94,9 @@ class Controller_Client extends Controller_Template {
         
         // Отзывы
          $otzyvy   = ORM::factory('Articles')->article('otzyvy');
-
+         $np       = ORM::factory('Articles')->article('nashi-preimuschestva');
          $view->otzyvy = $otzyvy;
+         $view->np = $np;
         // Отзывы
 
         $this->template->seo = ORM::factory('Brands')->seo('/');
