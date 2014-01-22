@@ -24,7 +24,6 @@ class Controller_Client extends Controller_Template {
         $this->template->menu = $categories['main'];
         $this->template->sub_menu = $categories['sub'];
 
-
         $styles = array(
             'content/css/bootstrap.min.css',
             'content/css/style.css',
@@ -92,9 +91,17 @@ class Controller_Client extends Controller_Template {
         $view->items = $all;
 
         $view->poll = $poll;
+        
+        // Отзывы
+         $otzyvy   = ORM::factory('Articles')->article('otzyvy');
+
+         $view->otzyvy = $otzyvy;
+        // Отзывы
 
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
+        
+        
     }
 
     public function action_poll() {
