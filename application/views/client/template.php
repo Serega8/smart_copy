@@ -92,7 +92,7 @@
 
                         <footer>
                             <div class="copy">
-                                &copy; 2014 ООО "СмартКопи"
+                                &copy; <? echo date('Y');?> ООО "СмартКопи"
                             </div>
 			<ul> 
 				<li>
