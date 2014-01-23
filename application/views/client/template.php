@@ -1,3 +1,4 @@
+<?// print_r($smartcopy); die;?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -69,7 +70,7 @@
                                 </li>
 			</ul>
                         <!--схема проезда начало-->
-                            <div  id="sheme"> <a href="#">Схема проезда </a></div>
+                            <div  id="sheme"> <?=HTML::anchor('#', 'Схема проезда');?></div>
                             <div class="clear"></div>
                         <!--схема проезда конец-->
 		</nav>
@@ -92,7 +93,7 @@
 
                         <footer>
                             <div class="copy">
-                                &copy; <? echo date('Y');?> ООО "СмартКопи"
+                                &copy; <?=date('Y'), ' ', $smartcopy['description'];?>
                             </div>
 			<ul> 
 				<li>

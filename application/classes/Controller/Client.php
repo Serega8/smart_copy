@@ -23,6 +23,7 @@ class Controller_Client extends Controller_Template {
         $categories = ORM::factory('Products')->get_tree(true);
         $this->template->menu = $categories['main'];
         $this->template->sub_menu = $categories['sub'];
+        $this->template->smartcopy = ORM::factory('Articles')->article('smartkopi');
 
         $styles = array(
             'content/css/bootstrap.min.css',
