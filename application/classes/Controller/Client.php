@@ -126,6 +126,12 @@ class Controller_Client extends Controller_Template {
          $kt['name1'] = explode(' ', $kt['name']);
          $view->kt = $kt;
          //каталог товаров
+         //новость  01.09.2013
+         $new1   = ORM::factory('Articles')->article('01-09-2013');
+         $view->new1 = $new1;
+         print_r($new1); die;
+         //новость  01.09.2013
+         
         // -----Услуги--------
 
         $this->template->seo = ORM::factory('Brands')->seo('/');

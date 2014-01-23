@@ -92,8 +92,8 @@
 					<li><div class="pic"> 
                                                 <?=HTML::image('content/images/1v.jpg', array('width' => '110px', 'height' => '80px'));?></div>
 						<div class="text">
-						<h3>01.09.2013</h3>
-						<p>  lorem ipsumlorem ipsumОтличная компания, работаем вместе уже третий год lorem ipsum</p>
+						<h3><?=$new1['name']?></h3>
+						<p><?=$new1['description']?></p>
 						</div>
 						<div class="clear"> </div>
 						<p class="dalee"> 
@@ -103,8 +103,8 @@
 					<li> <div class="pic"> 
 						<?=HTML::image('content/images/2v.jpg', array('width' => '110px', 'height' => '80px'));?></div>
 						<div class="text">
-						<h3>01.09.2013</h3>
-						<p>  lorem ipsumlorem ipsumОтличная компания, работаем вместе уже третий год lorem ipsum</p>
+						<h3><?=$new1['name']?></h3>
+						<p><?=$new1['description']?></p>
 						</div>
 						<div class="clear"> </div>
 						<p class="dalee"><?=HTML::anchor('#', 'Читать далее');?></p>	
@@ -112,8 +112,8 @@
 					<li> <div class="pic"> 
                                                 <?=HTML::image('content/images/3v.jpg', array('width' => '110px', 'height' => '80px'));?></div>
 						<div class="text">
-						<h3>01.09.2013</h3>
-						<p>  lorem ipsumlorem ipsumОтличная компания, работаем вместе уже третий год lorem ipsum</p>
+						<h3><?=$new1['name']?></h3>
+						<p><?=$new1['description']?></p>
 						</div>
 						<div class="clear"> </div>
 						<p class="dalee"><?=HTML::anchor('#', 'Читать далее');?></p>	
