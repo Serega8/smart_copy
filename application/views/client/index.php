@@ -20,43 +20,43 @@
 		<section class="bloki">
 			<ul>
 				<li id="grey">
-					<h1>Заправка</h1>
-					<h2>картриджей</h2>
+					<h1><?=$zapravka['name1'][0];?></h1>
+					<h2><?=$zapravka['name1'][1];?></h2>
 					<hr>
-					<p>dyhdhyhrdyh sdfjhn dsth dfhrfthrftgh rfth dsrthyug swrt e yhj tdyhtg rttg tg detg eatgetg edgtvget5 </p>
+					<p><?=$zapravka['description'];?></p>
 					<!--<a href="#"><img src="content/images/1c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/1c.jpg">');?>
 				</li>
 				<li id="blue">
-					<h1>Монтаж</h1>
-					<h2>локальных сетей</h2>
+					<h1><?=$montazh['name1'][0];?></h1>
+					<h2><?=$montazh['name1'][1],' ',$montazh['name1'][2];?></h2>
 					<hr>
-					<p>dyhrdyh sdfjhn dsth dfhrfthrftgh rfth dsrthyug swrt e yhj tdyhtg rttg tg detg eatgetg edgtvget5</p>
+					<p><?=$montazh['description']?></p>
 					<!--<a href="#"><img src="content/images/2c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/2c.jpg">');?>
 				</li>
 				<li id="pink">
-					<h1>Серверное</h1>
-					<h2>оборудование</h2>
+					<h1><?=$so['name1'][0]?></h1>
+					<h2><?=$so['name1'][1]?></h2>
 					<hr>
-					<p> edrgyhjdyhrdyh sdfjhn dsth dfhrfthrftgh rfth dsrthyug swrt e yhj tdyhtg rttg tg detg eatgetg edgtvget5u</p>
+					<p> <?=$so['description']?></p>
 					<!--<a href="#"><img src="content/images/3c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/3c.jpg">');?>
                                         
 				</li>
 				<li id="yellow">
-					<h1>Восстановление</h1>
-					<h2>жестких дисков</h2>
+					<h1><?=$vzhd['name1'][0]?></h1>
+					<h2><?=$vzhd['name1'][1],' ',$vzhd['name1'][2];?></h2>
 					<hr>
-					<p> srtyrdyhrdyh sdfjhn dsth dfhrfthrftgh rfth dsrthyug swrt e yhj tdyhtg rttg tg detg eatgetg edgtvget5ty</p>
+					<p> <?=$vzhd['description']?></p>
 					<!--<a href="#"><img src="content/images/4c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/4c.jpg">');?>
 				</li>
 				<li id="green">
-					<h1>Каталог</h1>
-					<h2>товаров</h2>
+					<h1><?=$kt['name1'][0]?></h1>
+					<h2><?=$kt['name1'][1]?></h2>
 					<hr>
-					<p>cfgdyhrdyh sdfjhn dsth dfhrfthrftgh rfth dsrthyug swrt e yhj tdyhtg rttg tg detg eatgetg edgtvget5yujh </p>
+					<p><?=$kt['description']?> </p>
 					<!--<a href="#"><img src="content/images/5c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/5c.jpg">');?>
 				</li>
