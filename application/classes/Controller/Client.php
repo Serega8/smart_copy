@@ -134,6 +134,10 @@ class Controller_Client extends Controller_Template {
          //новость  01.09.2013
          
         // -----Услуги--------
+        // -----Новости вывод картинки--------
+         $img  = ORM::factory('Articleimages')->get_images(11);
+         $view->img = $img;
+        // -----Новости вывод картинки--------
 
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;

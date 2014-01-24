@@ -1,3 +1,4 @@
+<?// print_r($img); die;?>
 <? if (!empty($slides)) : ?>
 <!--SLIDER START-->
 		<section class="carousel slide"> 
@@ -90,7 +91,7 @@
 				<h3 id="news">Новости </h3>
 				<ul> 
 					<li><div class="pic"> 
-                                                <?=HTML::image('content/images/1v.jpg', array('width' => '110px', 'height' => '80px'));?></div>
+                                                <?=HTML::image($img[0]['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
 						<div class="text">
 						<h3><?=$new1['name']?></h3>
 						<p><?=$new1['description']?></p>
