@@ -1,4 +1,4 @@
-<?// print_r($smartcopy); die;?>
+<? //print_r($logotip); die;?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,7 +23,7 @@
                 <!--HEAD START-->
 		<section class="secon"> 	
 			<article class="logo"> 
-                                <?=HTML::image('content/images/smart_copy.jpg', array('width' => '110px', 'height' => '64px'));?>
+                                <?=HTML::image($logotip[0]['img_url'], array('width' => '110px', 'height' => '64px'));?>
 			</article>
 			<article class="connectiv"> 
 				<p class="tel"> (017) 202-76-89</p>

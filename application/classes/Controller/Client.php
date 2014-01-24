@@ -24,6 +24,8 @@ class Controller_Client extends Controller_Template {
         $this->template->menu = $categories['main'];
         $this->template->sub_menu = $categories['sub'];
         $this->template->smartcopy = ORM::factory('Articles')->article('smartkopi');
+        $this->template->logotip = ORM::factory('Articleimages')->get_images(3);
+        
 
         $styles = array(
             'content/css/bootstrap.min.css',
@@ -129,7 +131,6 @@ class Controller_Client extends Controller_Template {
          //новость  01.09.2013
          $new1   = ORM::factory('Articles')->article('01-09-2013');
          $view->new1 = $new1;
-         print_r($new1); die;
          //новость  01.09.2013
          
         // -----Услуги--------
