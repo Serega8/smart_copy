@@ -109,7 +109,7 @@ class Controller_Client extends Controller_Template {
          $view->zapravka = $zapravka;
          //заправка картриджей
          //монтаж локальных сетей
-         $montazh   = ORM::factory('Articles')->article("montazh-lokalnyh-setey");
+         $montazh   = ORM::factory('Articles')->article("montazh-lokaljnyh-setey");
          $montazh['name1'] = explode(' ', $montazh['name']);
          $view->montazh = $montazh;
          //монтаж локальных сетей
@@ -128,17 +128,27 @@ class Controller_Client extends Controller_Template {
          $kt['name1'] = explode(' ', $kt['name']);
          $view->kt = $kt;
          //каталог товаров
-         //новость  01.09.2013
+        // -----Услуги--------
+        //новость  01.09.2013
          $new1   = ORM::factory('Articles')->article('01-09-2013');
          $view->new1 = $new1;
-         //новость  01.09.2013
-         
-        // -----Услуги--------
-        // -----Новости вывод картинки--------
          $img  = ORM::factory('Articleimages')->get_images(11);
          $view->img = $img;
-        // -----Новости вывод картинки--------
-
+         //новость  01.09.2013
+         //новость  02.09.2013
+         $new2   = ORM::factory('Articles')->article('02-09-2013');
+         $view->new2 = $new2;
+         $img2  = ORM::factory('Articleimages')->get_images(14);
+         $view->img2 = $img2;
+         //новость  02.09.2013
+         //новость  03.09.2013
+         $new3   = ORM::factory('Articles')->article('03-09-2013');
+         $view->new3 = $new3;
+         $img3  = ORM::factory('Articleimages')->get_images(15);
+         $view->img3 = $img3;
+         //новость  03.09.2013
+         
+         //новость  01.09.2013
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
         
