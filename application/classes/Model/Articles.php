@@ -21,6 +21,7 @@ class Model_Articles extends ORM {
             $res['name_translit'] = $inf->name_translit;
             $res['description'] = $inf->description;
             $res['status'] = $inf->status;
+            $res['k'] = $inf->keywords;
             $c[] = $res;
         }
         return $c;

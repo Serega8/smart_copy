@@ -93,6 +93,9 @@ class Controller_Client extends Controller_Template {
 
         $view->poll = $poll;
         
+//         $articles   = ORM::factory('Articles')->all_articles();
+//         $view->articles = $articles;
+        
         // Отзывы, наши преимущества
          $otzyvy   = ORM::factory('Articles')->article('otzyvy');
          $view->otzyvy = $otzyvy;
@@ -126,34 +129,8 @@ class Controller_Client extends Controller_Template {
          //каталог товаров
         // -----Услуги--------
         
-         //новости
-//         $new[]   = ORM::factory('Articles')->article($name);
-//         $view->new = $new;
-         
-//         $img  = ORM::factory('Articleimages')->get_images(11);
-//         $view->img = $img;
-         //новости
-        
-         
-         // мы сюда добавили строчку
-        //новость  01.09.2013
-         $new1   = ORM::factory('Articles')->article('01-09-2013');
-         $view->new1 = $new1;
-         $img  = ORM::factory('Articleimages')->get_images(11);
-         $view->img = $img;
-         //новость  01.09.2013
-         //новость  02.09.2013
-         $new2   = ORM::factory('Articles')->article('02-09-2013');
-         $view->new2 = $new2;
-         $img2  = ORM::factory('Articleimages')->get_images(14);
-         $view->img2 = $img2;
-         //новость  02.09.2013
-         //новость  03.09.2013
-         $new3   = ORM::factory('Articles')->article('03-09-2013');
-         $view->new3 = $new3;
-         $img3  = ORM::factory('Articleimages')->get_images(15);
-         $view->img3 = $img3;
-         //новость  03.09.2013
+         $new   = ORM::factory('Articles')->all_articles();
+         $view->new = $new;
          
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;

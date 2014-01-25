@@ -1,4 +1,4 @@
-<?// print_r($img); die;?>
+<? //print_r($new); die;?>
 <? if (!empty($slides)) : ?>
 <!--SLIDER START-->
 		<section class="carousel slide"> 
@@ -95,37 +95,25 @@
                      <!--НОВОСТИ НАЧАЛО-->
 			<aside>
 				<h3 id="news">Новости </h3>
-				<ul> 
+                                
+                                <ul>
+                                 <? foreach($new as  $v):?>
+                                        <? if($v['k'] == 'news'):?>
 					<li><div class="pic"> 
-                                                <?=HTML::image($img[0]['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
+                                                
+                                                <?=HTML::image($v['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
 						<div class="text">
-						<h3><?=$new1['name']?></h3>
-						<p><?=$new1['description']?></p>
+						<h3><?=$v['name']?></h3>
+						<p><?=$v['description']?></p>
 						</div>
 						<div class="clear"> </div>
 						<p class="dalee"> 
-                                                     <?=HTML::anchor('#', 'Читать далее');?>
+                                                <?=HTML::anchor('#', 'Читать далее');?>
                                                 </p>
 					</li>
-					<li> <div class="pic"> 
-                                                <?=HTML::image($img2[0]['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
-						<div class="text">
-						<h3><?=$new2['name']?></h3>
-						<p><?=$new2['description']?></p>
-						</div>
-						<div class="clear"> </div>
-						<p class="dalee"><?=HTML::anchor('#', 'Читать далее');?></p>	
-					</li>
-					<li> <div class="pic"> 
-                                                <?=HTML::image($img3[0]['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
-						<div class="text">
-						<h3><?=$new3['name']?></h3>
-						<p><?=$new3['description']?></p>
-						</div>
-						<div class="clear"> </div>
-						<p class="dalee"><?=HTML::anchor('#', 'Читать далее');?></p>	
-					</li>
-				</ul>				
+                                        <? endif;?>
+                                 <? endforeach;?>
+				</ul>	
 			</aside>
                       <!--НОВОСТИ КОНЕЦ-->
 			<div class="clear"> </div>
