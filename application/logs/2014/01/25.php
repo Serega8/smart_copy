@@ -308,3 +308,18 @@
 #9 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #10 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
 #11 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php:251
+2014-01-25 21:11:30 --- EMERGENCY: ErrorException [ 2 ]: array_fill(): Number of elements must be positive ~ MODPATH/orm/classes/Kohana/ORM.php [ 463 ] in file:line
+2014-01-25 21:11:30 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'array_fill(): N...', '/home/intellect...', 463, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(463): array_fill(0, 0, NULL)
+#2 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(392): Kohana_ORM->clear()
+#3 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(254): Kohana_ORM->_initialize()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(46): Kohana_ORM->__construct(NULL)
+#5 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(512): Kohana_ORM::factory('Stats')
+#6 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(21): Controller_Client::gd()
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(69): Controller_Client->before()
+#8 [internal function]: Kohana_Controller->execute()
+#9 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#10 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#11 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#12 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#13 {main} in file:line
