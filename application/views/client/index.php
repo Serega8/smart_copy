@@ -1,4 +1,5 @@
-<? //print_r($new); die;?>
+<!--<pre>-->
+<? // print_r($articles); die;?>
 <? if (!empty($slides)) : ?>
 <!--SLIDER START-->
 		<section class="carousel slide"> 
@@ -21,43 +22,43 @@
 		<section class="bloki">
 			<ul>
 				<li id="grey">
-					<h1><?=$zapravka['name1'][0];?></h1>
-					<h2><?=$zapravka['name1'][1];?></h2>
+					<h1><?=$zapravka['name'][0];?></h1>
+					<h2><?=$zapravka['name'][1];?></h2>
 					<hr>
-					<p><?=$zapravka['description'];?></p>
+					<p><?=$articles[3]['description'];?></p>
 					<!--<a href="#"><img src="content/images/1c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/1c.jpg">');?>
 				</li>
 				<li id="blue">
-					<h1><?=$montazh['name1'][0];?></h1>
-					<h2><?=$montazh['name1'][1],' ',$montazh['name1'][2];?></h2>
+					<h1><?=$montazh['name'][0];?></h1>
+					<h2><?=$montazh['name'][1],' ',$montazh['name'][2];?></h2>
 					<hr>
-					<p><?=$montazh['description']?></p>
+					<p><?=$articles[4]['description']?></p>
 					<!--<a href="#"><img src="content/images/2c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/2c.jpg">');?>
 				</li>
 				<li id="pink">
-					<h1><?=$so['name1'][0]?></h1>
-					<h2><?=$so['name1'][1]?></h2>
+					<h1><?=$so['name'][0]?></h1>
+					<h2><?=$so['name'][1]?></h2>
 					<hr>
-					<p> <?=$so['description']?></p>
+					<p> <?=$articles[5]['description']?></p>
 					<!--<a href="#"><img src="content/images/3c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/3c.jpg">');?>
                                         
 				</li>
 				<li id="yellow">
-					<h1><?=$vzhd['name1'][0]?></h1>
-					<h2><?=$vzhd['name1'][1],' ',$vzhd['name1'][2];?></h2>
+					<h1><?=$vzhd['name'][0]?></h1>
+					<h2><?=$vzhd['name'][1],' ',$vzhd['name'][2];?></h2>
 					<hr>
-					<p> <?=$vzhd['description']?></p>
+					<p> <?=$articles[6]['description']?></p>
 					<!--<a href="#"><img src="content/images/4c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/4c.jpg">');?>
 				</li>
 				<li id="green">
-					<h1><?=$kt['name1'][0]?></h1>
-					<h2><?=$kt['name1'][1]?></h2>
+					<h1><?=$kt['name'][0]?></h1>
+					<h2><?=$kt['name'][1]?></h2>
 					<hr>
-					<p><?=$kt['description']?> </p>
+					<p><?=$articles[7]['description']?> </p>
 					<!--<a href="#"><img src="content/images/5c.jpg"></a>-->
                                         <?=HTML::anchor('#', '<img src="content/images/5c.jpg">');?>
 				</li>
@@ -85,8 +86,8 @@
                             <!--НАШИ ПРЕИМУЩЕСТВА КОНЕЦ-->
                             <!--ОТЗЫВЫ НАЧАЛО-->
 				<div class="otzyvy" >
-					<h3><?=$otzyvy['name']?></h3> 
-					<p><?=$otzyvy['description']?></p>
+					<h3><?=$articles[0]['name']?></h3> 
+					<p><?=$articles[0]['description']?></p>
                                         <p class="dalee1"><?=HTML::anchor('#', 'Читать далее');?><p>		
 				</div> 	
                             <!--ОТЗЫВЫ КОНЕЦ-->
@@ -97,7 +98,7 @@
 				<h3 id="news">Новости </h3>
                                 
                                 <ul>
-                                 <? foreach($new as  $v):?>
+                                 <? foreach($articles as  $v):?>
                                         <? if($v['k'] == 'news'):?>
 					<li><div class="pic"> 
                                                 

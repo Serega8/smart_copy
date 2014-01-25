@@ -93,44 +93,20 @@ class Controller_Client extends Controller_Template {
 
         $view->poll = $poll;
         
-//         $articles   = ORM::factory('Articles')->all_articles();
-//         $view->articles = $articles;
-        
-        // Отзывы, наши преимущества
-         $otzyvy   = ORM::factory('Articles')->article('otzyvy');
-         $view->otzyvy = $otzyvy;
-        // Отзывы, наши преимущества
-         
-        // -----Услуги--------
-         //заправка картриджей
-         $zapravka   = ORM::factory('Articles')->article('zapravka-kartridzhey');
-         $zapravka['name1'] = explode(' ', $zapravka['name']);
-         $view->zapravka = $zapravka;
-         //заправка картриджей
-         //монтаж локальных сетей
-         $montazh   = ORM::factory('Articles')->article("montazh-lokaljnyh-setey");
-         $montazh['name1'] = explode(' ', $montazh['name']);
-         $view->montazh = $montazh;
-         //монтаж локальных сетей
-         //серверное оборудование
-         $so   = ORM::factory('Articles')->article('servernoe-oborudovanie');
-         $so['name1'] = explode(' ', $so['name']);
-         $view->so = $so;
-         //серверное оборудование
-         //восстановление жестких дисков
-         $vzhd   = ORM::factory('Articles')->article('vosstanovlenie-zhestkih-diskov');
-         $vzhd['name1'] = explode(' ', $vzhd['name']);
-         $view->vzhd = $vzhd;
-         //восстановление жестких дисков
-         //каталог товаров
-         $kt   = ORM::factory('Articles')->article('katalog-tovarov');
-         $kt['name1'] = explode(' ', $kt['name']);
-         $view->kt = $kt;
-         //каталог товаров
-        // -----Услуги--------
-        
-         $new   = ORM::factory('Articles')->all_articles();
-         $view->new = $new;
+         // вывод услуг и новостей
+         $articles         = ORM::factory('Articles')->all_articles();
+         $zapravka['name'] = explode(' ', $articles[3]['name']);
+         $montazh['name']  = explode(' ', $articles[4]['name']);
+         $so['name']       = explode(' ', $articles[5]['name']);
+         $vzhd['name']     = explode(' ', $articles[6]['name']);
+         $kt['name']       = explode(' ', $articles[7]['name']);
+         $view->articles   = $articles;
+         $view->zapravka   = $zapravka;
+         $view->montazh    = $montazh;
+         $view->so         = $so;
+         $view->vzhd       = $vzhd;
+         $view->kt         = $kt;
+         // вывод услуг и новостей
          
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
