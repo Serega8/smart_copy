@@ -98,10 +98,8 @@
 				<h3 id="news">Новости </h3>
                                 
                                 <ul>
-                                 <? foreach($articles as  $v):?>
-                                        <? if($v['k'] == 'news'):?>
+                                 <? foreach($news as  $v):?>
 					<li><div class="pic"> 
-                                                
                                                 <?=HTML::image($v['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
 						<div class="text">
 						<h3><?=$v['name']?></h3>
@@ -112,7 +110,6 @@
                                                 <?=HTML::anchor('#', 'Читать далее');?>
                                                 </p>
 					</li>
-                                        <? endif;?>
                                  <? endforeach;?>
 				</ul>	
 			</aside>

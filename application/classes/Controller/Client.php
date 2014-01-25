@@ -93,7 +93,7 @@ class Controller_Client extends Controller_Template {
 
         $view->poll = $poll;
         
-         // вывод услуг и новостей
+         // вывод услуг 
          $articles         = ORM::factory('Articles')->all_articles();
          $zapravka['name'] = explode(' ', $articles[3]['name']);
          $montazh['name']  = explode(' ', $articles[4]['name']);
@@ -106,11 +106,15 @@ class Controller_Client extends Controller_Template {
          $view->so         = $so;
          $view->vzhd       = $vzhd;
          $view->kt         = $kt;
-         // вывод услуг и новостей
+         // вывод услуг
+         
+         // вывод новостей
+         $news             = ORM::factory('Articles')->all_news();
+         $view->news       = $news;
+         // вывод новостей
          
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
-        
         
     }
 

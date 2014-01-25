@@ -214,3 +214,97 @@
 #12 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #13 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
 #14 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/index.php:44
+2014-01-25 16:49:25 --- EMERGENCY: Database_Exception [ 1064 ]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 'news' LIMIT 3' at line 1 [ SELECT `articles`.`id` AS `id`, `articles`.`date` AS `date`, `articles`.`name` AS `name`, `articles`.`name_translit` AS `name_translit`, `articles`.`description` AS `description`, `articles`.`keywords` AS `keywords`, `articles`.`descr` AS `descr`, `articles`.`title` AS `title`, `articles`.`seo_text` AS `seo_text`, `articles`.`status` AS `status`, `articles`.`sort` AS `sort`, `articles`.`parent_id` AS `parent_id` FROM `articles` AS `articles` WHERE `status` != '3' AND `k` == 'news' LIMIT 3 ] ~ MODPATH/database/classes/Kohana/Database/MySQL.php [ 194 ] in /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php:251
+2014-01-25 16:49:25 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `article...', 'Model_Articles', Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1063): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1004): Kohana_ORM->_load_result(true)
+#3 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(33): Kohana_ORM->find_all()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#10 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#11 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php:251
+2014-01-25 16:52:25 --- EMERGENCY: ErrorException [ 8 ]: Use of undefined constant DESC - assumed 'DESC' ~ APPPATH/classes/Model/Articles.php [ 33 ] in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php:33
+2014-01-25 16:52:25 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(33): Kohana_Core::error_handler(8, 'Use of undefine...', '/home/intellect...', 33, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#2 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#8 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php:33
+2014-01-25 16:52:38 --- EMERGENCY: ErrorException [ 2 ]: Missing argument 1 for Kohana_ORM::order_by(), called in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php on line 33 and defined ~ MODPATH/orm/classes/Kohana/ORM.php [ 1989 ] in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:1989
+2014-01-25 16:52:38 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1989): Kohana_Core::error_handler(2, 'Missing argumen...', '/home/intellect...', 1989, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(33): Kohana_ORM->order_by()
+#2 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#9 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:1989
+2014-01-25 16:54:00 --- EMERGENCY: ErrorException [ 2 ]: Missing argument 1 for Kohana_ORM::order_by(), called in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php on line 33 and defined ~ MODPATH/orm/classes/Kohana/ORM.php [ 1989 ] in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:1989
+2014-01-25 16:54:00 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1989): Kohana_Core::error_handler(2, 'Missing argumen...', '/home/intellect...', 1989, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(33): Kohana_ORM->order_by()
+#2 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#9 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php:1989
+2014-01-25 17:00:29 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: k ~ APPPATH/classes/Model/Articles.php [ 34 ] in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php:34
+2014-01-25 17:00:29 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(34): Kohana_Core::error_handler(8, 'Undefined index...', '/home/intellect...', 34, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#2 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#8 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php:34
+2014-01-25 17:08:53 --- EMERGENCY: Database_Exception [ 1054 ]: Unknown column 'desc' in 'order clause' [ SELECT `articles`.`id` AS `id`, `articles`.`date` AS `date`, `articles`.`name` AS `name`, `articles`.`name_translit` AS `name_translit`, `articles`.`description` AS `description`, `articles`.`keywords` AS `keywords`, `articles`.`descr` AS `descr`, `articles`.`title` AS `title`, `articles`.`seo_text` AS `seo_text`, `articles`.`status` AS `status`, `articles`.`sort` AS `sort`, `articles`.`parent_id` AS `parent_id` FROM `articles` AS `articles` WHERE `status` != '3' ORDER BY `desc` LIMIT 3 ] ~ MODPATH/database/classes/Kohana/Database/MySQL.php [ 194 ] in /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php:251
+2014-01-25 17:08:53 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `article...', 'Model_Articles', Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1063): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1004): Kohana_ORM->_load_result(true)
+#3 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(36): Kohana_ORM->find_all()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#10 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#11 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php:251
+2014-01-25 17:10:45 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: id ~ APPPATH/classes/Model/Articles.php [ 36 ] in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php:36
+2014-01-25 17:10:45 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(36): Kohana_Core::error_handler(8, 'Undefined index...', '/home/intellect...', 36, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#2 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#8 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php:36
+2014-01-25 17:10:53 --- EMERGENCY: ErrorException [ 1 ]: Cannot use [] for reading ~ APPPATH/classes/Model/Articles.php [ 36 ] in file:line
+2014-01-25 17:10:53 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-01-25 17:11:22 --- EMERGENCY: Database_Exception [ 1054 ]: Unknown column 'desc' in 'order clause' [ SELECT `articles`.`id` AS `id`, `articles`.`date` AS `date`, `articles`.`name` AS `name`, `articles`.`name_translit` AS `name_translit`, `articles`.`description` AS `description`, `articles`.`keywords` AS `keywords`, `articles`.`descr` AS `descr`, `articles`.`title` AS `title`, `articles`.`seo_text` AS `seo_text`, `articles`.`status` AS `status`, `articles`.`sort` AS `sort`, `articles`.`parent_id` AS `parent_id` FROM `articles` AS `articles` WHERE `status` != '3' ORDER BY `desc` LIMIT 3 ] ~ MODPATH/database/classes/Kohana/Database/MySQL.php [ 194 ] in /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php:251
+2014-01-25 17:11:22 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `article...', 'Model_Articles', Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1063): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 /home/intellectit/Документы/проекты/smartcopy.by/modules/orm/classes/Kohana/ORM.php(1004): Kohana_ORM->_load_result(true)
+#3 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php(36): Kohana_ORM->find_all()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(112): Model_Articles->all_news()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_index()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#10 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#11 {main} in /home/intellectit/Документы/проекты/smartcopy.by/modules/database/classes/Kohana/Database/Query.php:251
