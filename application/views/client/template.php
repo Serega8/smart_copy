@@ -16,6 +16,8 @@
         <meta name="keywords" content="<? if (!empty($seo)) echo $seo['k']; ?>">
     </head>
     <body>
+        
+        <div class="container">
         <header>
             <?=HTML::image('content/images/1.jpg', array('width' => '100%', 'height' => '4px'));?>
         </header>
@@ -120,6 +122,6 @@
          <? foreach ($scripts as $script) : ?>
             <?= HTML::script($script); ?>
         <? endforeach; ?>
-        
+        </div>
     </body>
 </html>

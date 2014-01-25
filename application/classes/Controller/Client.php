@@ -29,10 +29,8 @@ class Controller_Client extends Controller_Template {
 
         $styles = array(
             'content/css/bootstrap.min.css',
-            'content/css/style.css',
-            'content/css/bootstrap-responsive.css',
             'content/css/bootstrap-responsive.min.css',
-            'content/css/bootstrap.css',
+            'content/css/style.css',
            // 'content/css/style1.css',
         );
         $scripts = array(
@@ -127,6 +125,17 @@ class Controller_Client extends Controller_Template {
          $view->kt = $kt;
          //каталог товаров
         // -----Услуги--------
+        
+         //новости
+//         $new[]   = ORM::factory('Articles')->article($name);
+//         $view->new = $new;
+         
+//         $img  = ORM::factory('Articleimages')->get_images(11);
+//         $view->img = $img;
+         //новости
+        
+         
+         // мы сюда добавили строчку
         //новость  01.09.2013
          $new1   = ORM::factory('Articles')->article('01-09-2013');
          $view->new1 = $new1;
@@ -146,7 +155,6 @@ class Controller_Client extends Controller_Template {
          $view->img3 = $img3;
          //новость  03.09.2013
          
-         //новость  01.09.2013
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
         

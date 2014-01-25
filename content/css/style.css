@@ -11,6 +11,12 @@ body {
 	 height:100%;
 	 background:#ffffff
 }
+
+.container
+{ margin:0 auto;
+
+}
+
 a {color:#2b82dc
 }
 a:hover {text-decoration:none
