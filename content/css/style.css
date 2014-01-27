@@ -265,12 +265,35 @@ footer a:hover {text-decoration:underline;
 	margin:10px 10px 40px 10px;
 }
 
+ol{
+	counter-reset: li; /* Initiate a counter */
+	list-style: none; /* Remove default numbering */
+	*list-style: decimal; /* Keep using default numbering for IE6/7 */
+	font: 15px 'trebuchet MS', 'lucida sans';
+	padding: 0;
+	margin-bottom: 4em;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
 
-.list span{
-	margin-right: 15px;
+.rounded-list li{
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 0;
+	*padding: .4em;
+	text-decoration: none;
+}
+
+.rounded-list li:before{
+	content: counter(li);
+	counter-increment: li;
+	margin-right: 10px;
 	color: white;
 	background-color: #2ca9e4;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	padding: 1px 5px;
-}																	 
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	padding: 1px 7px;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+}
