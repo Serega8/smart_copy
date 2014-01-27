@@ -1,21 +1,56 @@
+<!--<style>
+.slider-v{
+width: 40%;
+ </style>-->
 <!--<pre>-->
 <? // print_r($articles); die;?>
 <? if (!empty($slides)) : ?>
 <!--SLIDER START-->
-		<section class="carousel slide"> 
-    <? foreach ($slides as $slide) : ?>
-<div class="carousel-inner" id="mycarousel">	
-        <img class="s-images" src="<?= $slide['img_url']; ?>" alt="<?= $slide['img_alt']; ?>" title="<?= $slide['img_title']; ?>"/>
-			</div>	
-         <? endforeach; ?>
-                        <?=HTML::anchor('#mycarousel', '&lsaquo;', array('class' => 'carousel-control left', 'data-slide' => 'prev'));?>
-                        <?=HTML::anchor('#mycarousel', '&rsaquo;', array('class' => 'carousel-control right', 'data-slide' => 'next'));?>
-			<ol class="carousel-indicators">
-				<li class="active" data-target="#mycarousel" data-slide-to="0"> </li>
-				<li data-target="#mycarousel" data-slide-to="1"></></li>
-				<li data-target="#mycarousel" data-slide-to="2"></></li>	
-			</ol>
-		</section>
+
+
+    <section class="carousel slide"> 
+
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <? $t = 0; ?>
+                    
+                    <? foreach ($slides as $slide): ?>
+                    
+                        <div class="item <? if($t==0): echo "active"; $t = 1; endif;?>">
+                            <img src="<?= $slide['img_url']; ?>" alt="<?= $slide['img_alt']; ?>">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+
+                    <? endforeach; ?>
+
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+
+
+ 
+         
+       
+
              <!--SLIDER END-->
              <? endif; ?>
             <!--УСЛУГИ НАЧОЛО-->

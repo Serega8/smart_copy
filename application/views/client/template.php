@@ -18,7 +18,7 @@
     <body>
         
         <div class="container">
-        <header>
+        <header style="color:red; padding-bottom:20px;">
             <?=HTML::image('content/images/1.jpg', array('width' => '100%', 'height' => '4px'));?>
         </header>
             <div class="main"> 
