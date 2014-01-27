@@ -108,11 +108,10 @@ width: 40%;
 					<h3> Наши преимущества</h3> 
 
 					<ol class="rounded-list">
-                                           <? $s = 1; ?>
+                                          
                                             <? foreach($pr as  $v):?>
                                             
-						<li><span><?=$s;?></span><?=$v['description']?></li>
-                                                <? $s++; ?>
+						<li><?=$v['description']?></li>
                                             <? endforeach;?>
 					</ol>	
                                         
