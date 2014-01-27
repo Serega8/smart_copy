@@ -111,6 +111,13 @@ class Controller_Client extends Controller_Template {
          $view->news       = $news;
          // вывод новостей
          
+          // вывод преимуществ
+         $pr               = ORM::factory('Articles')->all_preimushestva();
+         $view->pr       = $pr;
+//         echo "<pre>";
+//         print_r($pr); die;
+         // вывод преимуществ
+         
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
         
