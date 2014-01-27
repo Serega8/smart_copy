@@ -5,10 +5,12 @@
         <group>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/index1.html</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/config/database.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/logs/newEmptyPHP.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articleimages.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/content/css/style.css</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/index.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/cache/newEmptyPHP.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/template.php</file>
         </group>

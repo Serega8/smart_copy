@@ -19,7 +19,7 @@ class Controller_Client extends Controller_Template {
                 $_SESSION['y'] = true;
         }
         $this->gd();
-
+           // добавили кучу кода, не пойми что тут
         $categories = ORM::factory('Products')->get_tree(true);
         $this->template->menu = $categories['main'];
         $this->template->sub_menu = $categories['sub'];
