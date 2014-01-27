@@ -263,5 +263,14 @@ footer a:hover {text-decoration:underline;
 .copy {float:left;
 	font-weight:bold;
 	margin:10px 10px 40px 10px;
-}	
-																	 
+}
+
+
+.list span{
+	margin-right: 15px;
+	color: white;
+	background-color: #2ca9e4;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 1px 5px;
+}																	 
