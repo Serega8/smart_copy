@@ -29,8 +29,8 @@ class Controller_Client extends Controller_Template {
         $styles = array(
             'content/css/bootstrap.min.css',
             'content/css/bootstrap-responsive.min.css',
+            'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
             'content/css/style.css',
-           // 'content/css/style1.css',
         );
         $scripts = array(
             'content/client_js/jquery.min.js',
@@ -41,39 +41,6 @@ class Controller_Client extends Controller_Template {
 
         $this->template->styles = $styles;
         $this->template->scripts = $scripts;
-
-
-//        
-//        $action = $this->request->action();
-//        $param = $this->request->param();
-//        $this->template->c = ORM::factory('Contacts')->get_contacts();
-//        $level2 = isset($param['level2']) ? $param['level2'] : $action;
-//        $level3 = isset($param['level3']) ? $param['level3'] : NULL;
-//        $level4 = isset($param['level4']) ? $param['level4'] : NULL;
-//        $level5 = isset($param['level5']) ? $param['level5'] : NULL;
-//        $action_rus = '';
-//        $this->template->action = $action;
-//        $this->template->level3 = $level3;
-//        switch ($action) {
-//            case 'catalog':
-//                $level2_rus = isset($level2) ? ORM::factory('Categories')->check_level2($level2) : null;
-//                $level3_rus = isset($level3) ? ORM::factory('Subcategories')->check_level3($level3) : null;
-//                $action_rus = 'КАТАЛОГ';
-//                break;
-//            case 'articles':
-//                $level2_rus = (isset($level2) && $level2 !== $action) ? ORM::factory('Articles')->check_level2($level2) : null;
-//                $action_rus = 'СТАТЬИ';
-//                break;
-//            case 'contacts':
-//                $action_rus = 'КОНТАКТЫ';
-//                break;
-//            default:
-//                break;
-//        }
-//        $this->template->action_rus = $action_rus;
-//        $this->template->level2_rus = isset($level2_rus) ? $level2_rus : null;
-//        $this->template->level3_rus = isset($level3_rus) ? $level3_rus : null;
-//        $this->template->level2 = $level2;
     }
 
     public function action_index() {

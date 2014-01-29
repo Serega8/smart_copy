@@ -36,7 +36,7 @@
 					<input type="text" class="spani" placeholder="Введите запрос"/> 	
 				</form>	
 			    <div class="buton">
-                                        <?=HTML::anchor('#', 'On-line консультант');?>
+                    <?=HTML::anchor('#', 'On-line консультант');?>
 				</div>
 			</article>
 		</section>
@@ -87,7 +87,9 @@
  <!-------------------------------------------------------->                           
                             
                             <div id="content">
+
                                 <?= $content; ?>
+                                
                             </div>
 
                         </div>
