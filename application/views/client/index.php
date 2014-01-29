@@ -1,8 +1,3 @@
-<!--<style>
-.slider-v{
-width: 40%;
- </style>-->
-<!--<pre>-->
 <? // print_r($articles); die;?>
 <? if (!empty($slides)) : ?>
 <!--SLIDER START-->
@@ -27,14 +22,10 @@ width: 40%;
                         <div class="item <? if($t==0): echo "active"; $t = 1; endif;?>">
                             <img src="<?= $slide['img_url']; ?>" alt="<?= $slide['img_alt']; ?>">
                             <div class="carousel-caption">
-
                             </div>
                         </div>
-
                     <? endforeach; ?>
-
                 </div>
-
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -43,13 +34,6 @@ width: 40%;
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
-
-
-
- 
-         
-       
-
              <!--SLIDER END-->
              <? endif; ?>
             <!--УСЛУГИ НАЧОЛО-->
