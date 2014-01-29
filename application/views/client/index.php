@@ -42,43 +42,43 @@
 				<li id="grey">
 					<h1><?=$zapravka['name'][0];?></h1>
 					<h2><?=$zapravka['name'][1];?></h2>
-					<hr>
+					
 					<p><?=$articles[3]['description'];?></p>
 					<!--<a href="#"><img src="content/images/1c.jpg"></a>-->
-                                        <?=HTML::anchor('#', '<img src="content/images/1c.jpg">');?>
+                                        <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
 				</li>
 				<li id="blue">
 					<h1><?=$montazh['name'][0];?></h1>
 					<h2><?=$montazh['name'][1],' ',$montazh['name'][2];?></h2>
-					<hr>
+					
 					<p><?=$articles[4]['description']?></p>
 					<!--<a href="#"><img src="content/images/2c.jpg"></a>-->
-                                        <?=HTML::anchor('#', '<img src="content/images/2c.jpg">');?>
+                                        <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
 				</li>
 				<li id="pink">
 					<h1><?=$so['name'][0]?></h1>
 					<h2><?=$so['name'][1]?></h2>
-					<hr>
+					
 					<p> <?=$articles[5]['description']?></p>
 					<!--<a href="#"><img src="content/images/3c.jpg"></a>-->
-                                        <?=HTML::anchor('#', '<img src="content/images/3c.jpg">');?>
+                                        <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
                                         
 				</li>
 				<li id="yellow">
 					<h1><?=$vzhd['name'][0]?></h1>
 					<h2><?=$vzhd['name'][1],' ',$vzhd['name'][2];?></h2>
-					<hr>
+					
 					<p> <?=$articles[6]['description']?></p>
 					<!--<a href="#"><img src="content/images/4c.jpg"></a>-->
-                                        <?=HTML::anchor('#', '<img src="content/images/4c.jpg">');?>
+                                        <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
 				</li>
 				<li id="green">
 					<h1><?=$kt['name'][0]?></h1>
 					<h2><?=$kt['name'][1]?></h2>
-					<hr>
+					
 					<p><?=$articles[7]['description']?> </p>
 					<!--<a href="#"><img src="content/images/5c.jpg"></a>-->
-                                        <?=HTML::anchor('#', '<img src="content/images/5c.jpg">');?>
+                                        <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
 				</li>
 			</ul>
 		</section>
@@ -92,11 +92,9 @@
 					<h3> Наши преимущества</h3> 
 
 					<ol class="rounded-list">
-                                          
-                                            <? foreach($pr as  $v):?>
-                                            
-						<li><?=$v['description']?></li>
-                                            <? endforeach;?>
+                       <? foreach($pr as  $v):?>
+							<li><?=$v['description']?></li>
+                        <? endforeach;?>
 					</ol>	
                                         
 				</div> 	
@@ -119,7 +117,7 @@
 					<li><div class="pic"> 
                                                 <?=HTML::image($v['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
 						<div class="text">
-						<h3><?=$v['name']?></h3>
+						<h4><?=$v['name']?></h4>
 						<p><?=$v['description']?></p>
 						</div>
 						<div class="clear"> </div>
