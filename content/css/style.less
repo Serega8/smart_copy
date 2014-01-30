@@ -88,9 +88,6 @@ header {
     font-weight: bold;
 }	
 .spani {
-	background-image: url(../images/lupa.jpg);
-	background-repeat: no-repeat;
-	background-position: right center;
 	position:absolute;
 	width: 300px;
 	top:10px;
@@ -98,6 +95,12 @@ header {
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* Параметры тени */
 	border: 1px solid;
 }
+.submit1 {
+	background-image: url(../images/lupa.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
 .buton {
 	background-color:#4987da;		
 	padding:3px 5px;
@@ -160,14 +163,14 @@ nav a:hover {
 	left:46%;
 }
 .carousel-indicators li {
-	height: 16px;
-	width: 16px;
-	margin: 0px;
+	height: 18px;
+	width: 18px;
+	margin:0px 5px 0px 5px;
 	padding: 5px;
-	border-radius: 16px;
+	border-radius: 18px;
 	color: #8b8c8e;
 	background-color: #8d8e90;
-	box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+	box-shadow: 0.3px 0.3px 3px rgba(0, 0, 0, 0.5);
 }
 .carousel-inner {
 	border:1px solid;
@@ -177,14 +180,17 @@ nav a:hover {
 }
 .carousel-indicators .active {
 	background-color: #fff;
-	margin:0px;
-	height: 15px;
-	width: 15px;
+	margin:0px 5px 0px 5px;
+	height: 18px;
+	width: 18px;
 	background: #1686e0;
 
 }
 .item img {
 	text-align: center;
+}
+.item {
+	position: relative;
 }
 .thirst {
 	width:100%;
@@ -307,8 +313,30 @@ aside ul li {
 }
 .bloki ul li:first-child {
 	margin-left:0%;
-	
-	
+}
+
+.slider_caption {
+	font-size: 24px;
+	color: #1f1f1f;
+	font-weight: 100;
+}
+.carousel-caption {
+	right:5%;
+	top:100px;
+	left: 70%;
+	padding-bottom: 40px;
+	letter-spacing: 1.15px;
+	text-shadow: none;
+
+}
+.carousel-caption strong {
+	color:#4a86d9;
+}
+
+.btn {
+	width: 120px;
+	margin-top: 20px;
+	background-color: #4a86d9;
 }
 .bloki ul li  a {
 	display:block;			

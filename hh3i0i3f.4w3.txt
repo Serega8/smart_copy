@@ -1,0 +1,20 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   application/logs/2014/01/30.php
+#	modified:   application/views/client/index.php
+#	modified:   application/views/client/template.php
+#	modified:   content/css/style.css
+#	modified:   content/css/style.less
+#	new file:   content/images/printer.png
+#	new file:   content/images/slideshow/52dfedde6d88cb_slider-jpg-.jpg
+#	modified:   content/images/slideshow/52dfedde6d88cb_slider.jpg
+#	new file:   content/images/slideshow/52ea9250c368aChrysanthemum.jpg
+#	new file:   content/images/slideshow/52ea93030ff9f52dfedde6d88cb_slider.jpg
+#	new file:   content/images/slideshow/chrysanthemum-jpg-.jpg
+#
+

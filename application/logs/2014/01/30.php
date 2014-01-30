@@ -24,3 +24,39 @@
 #8 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #9 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
 #10 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/template.php:31
+2014-01-30 20:38:17 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 0 ~ APPPATH\views\client\template.php [ 31 ] in D:\veronika\smart_copy\application\views\client\template.php:31
+2014-01-30 20:38:17 --- DEBUG: #0 D:\veronika\smart_copy\application\views\client\template.php(31): Kohana_Core::error_handler(8, 'Undefined offse...', 'D:\veronika\sma...', 31, Array)
+#1 D:\veronika\smart_copy\system\classes\Kohana\View.php(61): include('D:\veronika\sma...')
+#2 D:\veronika\smart_copy\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\veronika\sma...', Array)
+#3 D:\veronika\smart_copy\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 D:\veronika\smart_copy\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\veronika\smart_copy\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#7 D:\veronika\smart_copy\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\veronika\smart_copy\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 D:\veronika\smart_copy\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\veronika\smart_copy\application\views\client\template.php:31
+2014-01-30 20:39:48 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 0 ~ APPPATH\views\client\template.php [ 31 ] in D:\veronika\smart_copy\application\views\client\template.php:31
+2014-01-30 20:39:48 --- DEBUG: #0 D:\veronika\smart_copy\application\views\client\template.php(31): Kohana_Core::error_handler(8, 'Undefined offse...', 'D:\veronika\sma...', 31, Array)
+#1 D:\veronika\smart_copy\system\classes\Kohana\View.php(61): include('D:\veronika\sma...')
+#2 D:\veronika\smart_copy\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\veronika\sma...', Array)
+#3 D:\veronika\smart_copy\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 D:\veronika\smart_copy\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\veronika\smart_copy\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#7 D:\veronika\smart_copy\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\veronika\smart_copy\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 D:\veronika\smart_copy\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\veronika\smart_copy\application\views\client\template.php:31
+2014-01-30 20:39:49 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 0 ~ APPPATH\views\client\template.php [ 31 ] in D:\veronika\smart_copy\application\views\client\template.php:31
+2014-01-30 20:39:49 --- DEBUG: #0 D:\veronika\smart_copy\application\views\client\template.php(31): Kohana_Core::error_handler(8, 'Undefined offse...', 'D:\veronika\sma...', 31, Array)
+#1 D:\veronika\smart_copy\system\classes\Kohana\View.php(61): include('D:\veronika\sma...')
+#2 D:\veronika\smart_copy\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\veronika\sma...', Array)
+#3 D:\veronika\smart_copy\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 D:\veronika\smart_copy\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#5 [internal function]: Kohana_Controller->execute()
+#6 D:\veronika\smart_copy\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#7 D:\veronika\smart_copy\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 D:\veronika\smart_copy\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 D:\veronika\smart_copy\index.php(118): Kohana_Request->execute()
+#10 {main} in D:\veronika\smart_copy\application\views\client\template.php:31

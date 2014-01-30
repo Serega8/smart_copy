@@ -21,6 +21,12 @@
                     
                         <div class="item <? if($t==0): echo "active"; $t = 1; endif;?>">
                             <img src="<?= $slide['img_url']; ?>" alt="<?= $slide['img_alt']; ?>">
+                            	<div class="carousel-caption">
+                            	<h3 class="slider_caption">
+						        	<?= $slide['img_title']; ?>
+						    	</h3>
+						    	<a class="btn btn-large btn-primary" href="#">Подробнее</a>
+						      	</div>
                             <div class="carousel-caption">
                             </div>
                         </div>
