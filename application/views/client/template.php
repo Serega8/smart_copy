@@ -1,4 +1,4 @@
-<? //print_r($logotip); die;?>
+<? //print_r($feedback); die;?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,7 +28,7 @@
                                 <?=HTML::image($logotip[0]['img_url'], array('width' => '110px', 'height' => '64px'));?>
 			</article>
 			<article class="connectiv"> 
-				<p class="tel"> (017) 202-76-89</p>
+				<p class="tel"><?=$feedback[0]['name']?></p>
 				<p class="adress"> г. Минск ул. Понамаренко 35-102  Пн-Пт 9<sup>00</sup>-20<sup>00</sup></p>
 			</article>
 			<article class="r_blok"> 
