@@ -28,8 +28,8 @@
                                 <?=HTML::image($logotip[0]['img_url'], array('width' => '110px', 'height' => '64px'));?>
 			</article>
 			<article class="connectiv"> 
-				<p class="tel"><?=$feedback[0]['name']?></p>
-				<p class="adress"> г. Минск ул. Понамаренко 35-102  Пн-Пт 9<sup>00</sup>-20<sup>00</sup></p>
+				<p class="tel"><?=$feedback[0]['placeholder']?></p>
+				<p class="adress"> <?=$feedback[1]['placeholder']?> <?=$feedback[2]['placeholder']?></p>
 			</article>
 			<article class="r_blok"> 
 				<form>
