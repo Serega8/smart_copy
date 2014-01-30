@@ -1,0 +1,428 @@
+* {
+	margin:0;
+	padding:0;
+	outline:none
+} 
+/*Общие стили*/
+body {
+    color:#333;	 
+	background:#ffffff
+}
+.container { 
+	margin:0 auto;
+	min-width:1000px;
+	max-width:1205px;
+}
+a {
+	color:#2b82dc;
+}
+a:hover {
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+    line-height:1;
+	margin:5px 0 10px;
+	color:#2ca9e4;
+}
+h3 {
+	font-size:16px;
+    font-weight:bold;
+}
+h4 {
+	font-size:14px;
+    font-weight:bold;
+}
+p {
+	  
+    line-height:1.4;
+    font-size:12px;
+    margin-bottom:1em
+}
+ul {
+	list-style:none;
+}
+ol {
+	list-style-position:inside
+}
+header,nav,section,article,aside,footer {
+	display:block;
+    position:relative;
+}
+header { 
+    margin:10px auto;
+	padding-top:30px;
+	width:100%;
+	height:30px;
+}
+.secon {
+	margin:10px auto; 
+	width:100%; 
+	height:100px;
+}
+.logo {
+	width:30%;    
+	height:64px;
+	float:left;
+}
+.connectiv {
+	width:40%;    	
+	height:100px;	       	
+	float:left;	
+}
+.r_blok {
+	width:30%;    	
+	height:100px;
+    float:right;
+}
+.tel {
+	text-align:center;  
+    margin:10px 0 0 0;
+    font-size: 35px;	
+    letter-spacing: 5px;
+}
+.adress {
+	text-align:center; 
+    margin:0;
+    font-size: 12px;
+    font-weight: bold;
+}	
+.spani {
+	background-image: url(../images/lupa.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	position:absolute;
+	width: 300px;
+	top:10px;
+	right: 0px; 
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* Параметры тени */
+	border: 1px solid;
+}
+.buton {
+	background-color:#4987da;		
+	padding:3px 5px;
+	position:absolute;
+	top:65px; 
+	right:0px;
+}
+.buton a {
+	color:#ffffff;
+	padding:3px 5px;	
+}	
+nav {
+    height:50px;
+	background:#ffffff;
+	font-size:12px;
+	margin:10px 0px;
+}
+nav ul {
+	float:left;
+	text-align:left;
+}
+nav li {
+	float:left;
+	display:inline-block;
+    margin:10px 10px 10px 10px;
+}
+nav a {
+	font-weight:bold;
+    text-decoration:none;
+	color:#000000;
+}
+nav a:hover {
+	text-decoration:underline;
+    color:#2ca9e4
+}
+#sheme {
+	float:right; 
+	margin: 20px;
+	margin:10px 10px 10px 10px;
+}
+#sheme a {
+	font-weight:bold;
+	margin:10px 10px 10px 10px;
+	color:#55bce7; 
+	text-decoration: none;
+	border-bottom: 1px dashed #55bce7; 
+}
+#sheme a:hover {
+	border-bottom: none;
+}
+.clear {
+	clear:both;
+}
+.carousel {
+	width:100%;
+	margin:10px auto 50px auto;
+}
+.carousel-indicators {
+	bottom: -100px;
+	left:46%;
+}
+.carousel-indicators li {
+	height: 16px;
+	width: 16px;
+	margin: 0px;
+	padding: 5px;
+	border-radius: 16px;
+	color: #8b8c8e;
+	background-color: #8d8e90;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+.carousel-inner {
+	border:1px solid;
+}
+.carousel-indicators li{
+	border: 3px solid #fff;
+}
+.carousel-indicators .active {
+	background-color: #fff;
+	margin:0px;
+	height: 15px;
+	width: 15px;
+	background: #1686e0;
+
+}
+.item img {
+	text-align: center;
+}
+.thirst {
+	width:100%;
+	margin:5px auto; 
+	padding:10px 2px 10px 2px;
+	height:410px;
+}	
+.dalee a {
+	color:#2ca9e4;
+	text-decoration:underline;
+	font-size:12px;
+	position:absolute;
+	bottom:10px; 
+	right:4px;
+}
+.dalee1 a {
+	color:#2ca9e4;
+	text-decoration:underline;
+	font-size:12px;
+	position:absolute;
+	bottom:24px;
+	right:0px;
+}
+.advant {
+    color:black;
+	background-image: url(../images/nomera.jpg);
+	background-repeat: no-repeat;
+	background-position:left center;
+	height:280px;
+}	
+.advant ul { 
+	margin-top:0px;
+	padding-top:0px; 
+	padding-left:10px;
+}
+.advant ul li {
+   margin:10px 0;
+}
+.otzyvy {
+	height:130px;
+	position:relative;
+}
+.otzyvy p {
+	height:130px;
+	position:relative;
+	font-size: 14px;
+	text-align:justify;
+}
+#news p {
+	height:130px;
+	position:relative;
+	font-size: 14px;
+}
+
+.pic {
+	float:left;
+	width:120px; 
+	height:110px;
+}
+.pic img {
+	max-width:100%;
+}
+.text {
+	float:right;
+	width:230px;
+	height:110px;
+ }
+.lefts {
+	width:65%;
+	float:left;
+	padding-right:15px;
+}
+aside {
+	width:35%;
+	float:right;
+	padding-left: 10px;
+}
+aside ul {
+	display:block;
+}
+aside ul li {
+	position:relative;
+	display:inline-block;		
+}
+#news {
+	padding-left:20px;
+}
+.bloki {
+	height:330px;
+	width:100%;
+	margin:0px auto;
+}
+
+#grey i {
+	color:#fde101;
+}
+#blue i {
+	color:#18bdd1;
+}
+#pink i {
+	color:#78cd1a;
+}
+#yellow i {
+	color:#e360d2;
+}
+#green i {
+	color:#dc1f26;
+}
+.bloki ul {
+	margin:5px auto;
+}
+.bloki ul li {
+	height:295px;
+	width:19%;
+	margin: 5px 0% 5px 1.25%;
+	padding:5px 5px 5px 5px;
+	display:block;
+	float:left;
+	position:relative;
+}
+.bloki ul li:first-child {
+	margin-left:0%;
+	
+	
+}
+.bloki ul li  a {
+	display:block;			
+	color:#fde101;
+	background-color:#ffffff; 	
+	padding: 7px 13px;
+	-webkit-border-radius: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+}
+.bloki ul li h1,.bloki li h2 {
+	text-align:center; 
+	font-weight:bold;
+	color:#ffffff;
+}
+.bloki ul li h1 {
+	padding-top:10px;
+	font-size: 22px;
+}
+.bloki ul li p {
+	font-weight:bold;
+	color:#ffffff; 
+	font-size:12px;
+	padding:15px 13px;
+}
+
+.bloki li h2 {
+	font-size: 18px;
+	border-bottom: 1px solid #fff;
+	margin:0px 15px;
+	padding-bottom: 15px; 
+}
+.fa {
+	color:#fde101;
+	font-size: 14px;    
+}
+#grey {
+	background-color:#fde101;
+}
+#blue {
+	background-color:#18bdd1;
+}
+#pink {
+	background-color:#78cd1a;
+}
+#yellow {
+	background-color:#e360d2;
+}
+#green {
+	background-color:#dc1f26;
+}	
+.smallslider {
+	height:100px;
+	width:100%;
+	margin:10px auto;
+	background-color:#dbe7f7;  
+ }
+footer {
+    width:100%;
+    margin:10px auto;
+    height:50px;
+    background:#ffffff;
+    font-size:12px;	
+}
+footer ul {
+	float:right;	
+}
+footer ul li {
+	display:inline-block;
+    margin:10px 10px 40px 10px;
+	float:right;
+}
+footer a {
+	font-weight:bold;
+    text-decoration:none;
+	color:#000000
+}
+footer a:hover {
+	text-decoration:underline;
+    color:#2ca9e4
+}
+.copy {
+	float:left;
+	font-weight:bold;
+	margin:10px 10px 40px 10px;
+}
+ol {
+	counter-reset: li; /* Initiate a counter */
+	list-style: none; /* Remove default numbering */
+	*list-style: decimal; /* Keep using default numbering for IE6/7 */
+	font: 15px 'trebuchet MS', 'lucida sans';
+	padding: 0;
+	margin-bottom: 4em;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded-list li {
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 0;
+	*padding: .4em;
+	text-decoration: none;
+}
+.rounded-list li:before {
+	content: counter(li);
+	counter-increment: li;
+	margin-right: 10px;
+	color: white;
+	background-color: #2ca9e4;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	padding: 1px 7px;
+}
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+}
