@@ -14,6 +14,7 @@
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta name="description" content="<? if (!empty($seo)) echo $seo['d']; ?>">
         <meta name="keywords" content="<? if (!empty($seo)) echo $seo['k']; ?>">
+
     </head>
     <body>
         
@@ -25,7 +26,7 @@
                 <!--HEAD START-->
 		<section class="secon"> 	
 			<article class="logo"> 
-                                <?=HTML::image($logotip[0]['img_url'], array('width' => '110px', 'height' => '64px'));?>
+                <a href="/"><?=HTML::image($logotip[0]['img_url'], array('width' => '110px', 'height' => '64px'));?></a>
 			</article>
 			<article class="connectiv"> 
 				<p class="tel"><?=$feedback['0']['placeholder']?></p>
@@ -33,8 +34,9 @@
 			</article>
 			<article class="r_blok"> 
 				<form>
-					<input type="text" class="spani" placeholder="Введите запрос"/> 
-                    <input type="submit" class="submit1"/> 	
+                    <input type="submit" class="submit1" value="" /> 
+					<input type="text" class="spani" placeholder="Введите запрос"/>                    
+                    <div class="null"></div>	
 				</form>	
 			    <div class="buton">
                     <?=HTML::anchor('#', 'On-line консультант');?>
@@ -125,6 +127,26 @@
          <? foreach ($scripts as $script) : ?>
             <?= HTML::script($script); ?>
         <? endforeach; ?>
+         <script type="text/javascript">
+            $('#foo2').carouFredSel({
+                // items               : 6,
+                direction           : "up",
+                    scroll : {
+                    items           : 2,
+                    easing          : "elastic",
+                    duration        : 1000,                         
+                    pauseOnHover    : true
+                    // }                  
+                auto: false,
+                prev: '#prev2',
+                next: '#next2',
+                mousewheel: true,
+                    swipe: {
+                    onMouse: true,
+                    onTouch: true
+                    }
+                });
+        </script>
         </div>
     </body>
 </html>

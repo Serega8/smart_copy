@@ -21,14 +21,12 @@
                     
                         <div class="item <? if($t==0): echo "active"; $t = 1; endif;?>">
                             <img src="<?= $slide['img_url']; ?>" alt="<?= $slide['img_alt']; ?>">
-                            	<div class="carousel-caption">
+                        	<div class="carousel-caption">
                             	<h3 class="slider_caption">
 						        	<?= $slide['img_title']; ?>
 						    	</h3>
 						    	<a class="btn btn-large btn-primary" href="#">Подробнее</a>
-						      	</div>
-                            <div class="carousel-caption">
-                            </div>
+					      	</div>
                         </div>
                     <? endforeach; ?>
                 </div>
@@ -139,7 +137,7 @@
 		</article>
              <!--НИЖНИЙ БЛОК КОНЕЦ-->
              <!--НИЖНИЙ СЛАЙДЕР НАЧАЛО-->
-		<section class="smallslider">
+<!-- 		<section class="smallslider">
 			<div id="myCarousel2" class="carousel slide">				
 				<div class="carousel-inner">
 					<div class="active item"><?=HTML::image('content/images/panasonic.jpg');?></div>
@@ -152,5 +150,19 @@
                                 <?=HTML::anchor('#myCarousel', '&lsaquo;', array('class' => 'carousel-control left', 'data-slide' => 'prev'));?>
                                 <?=HTML::anchor('#myCarousel', '&rsaquo;', array('class' => 'carousel-control right', 'data-slide' => 'next'));?>
 			</div>
-		</section>
+		</section> -->
+		<div class="list_carousel">
+			<ul id="foo2">
+				<li><?=HTML::image('content/images/panasonic.jpg');?></li>
+				<li><?=HTML::image('content/images/canon.jpg');?></li>
+				<li><?=HTML::image('content/images/lexmark.jpg');?></li>
+				<li><?=HTML::image('content/images/kuocera.jpg');?></li>
+				<li><?=HTML::image('content/images/xerox.jpg');?></li>
+				<li><?=HTML::image('content/images/hp.jpg');?></li>				
+			</ul>
+			<div class="clearfix"></div>
+			<a id="prev2" class="prev" href="#"><i class="fa fa-chevron-left"></i></a>
+			<a id="next2" class="next" href="#"><i class="fa fa-chevron-right"></i></a>
+			
+		</div>
              <!--НИЖНИЙ СЛАЙДЕР КОНЕЦ-->

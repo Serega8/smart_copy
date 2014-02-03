@@ -37,7 +37,9 @@ class Controller_Client extends Controller_Template {
             'content/client_js/jquery.min.js',
             'http://code.jquery.com/jquery-latest.js',
             'content/js/bootstrap.min.js',
-            'content/client_js/feedback.js'
+            'content/client_js/feedback.js',
+            'content/js/jquery.carouFredSel-6.2.1-packed.js',
+
         );
 
         $this->template->styles = $styles;

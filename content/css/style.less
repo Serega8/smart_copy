@@ -64,6 +64,10 @@ header {
 	width:30%;    
 	height:64px;
 	float:left;
+	a{
+		display: block;
+		width: 110px;
+	}
 }
 .connectiv {
 	width:40%;    	
@@ -88,25 +92,34 @@ header {
     font-weight: bold;
 }	
 .spani {
-	position:absolute;
-	width: 300px;
-	top:10px;
-	right: 0px; 
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* Параметры тени */
-	border: 1px solid;
+	display: block;
+	float:right; 
+	/*box-shadow: 1px 1px 1px rgba(0,0,0,0.5); */
+	border: 1px solid #B6B2B2;
+	border-right: none;
+	width: 270px;
+	padding: 3px;
 }
 .submit1 {
 	background-image: url(../images/lupa.jpg);
 	background-repeat: no-repeat;
 	background-position: right center;
+	width:27px;
+	display: block;
+	float:right;
+	/*box-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
+	border: 1px solid #B6B2B2;
+	background-color: #fff;
+	padding: 3px;
 }
 
 .buton {
 	background-color:#4987da;		
 	padding:3px 5px;
-	position:absolute;
-	top:65px; 
-	right:0px;
+	width: 157px;
+	margin-top: 15px;
+	float:right;
+
 }
 .buton a {
 	color:#ffffff;
@@ -156,10 +169,10 @@ nav a:hover {
 }
 .carousel {
 	width:100%;
-	margin:10px auto 50px auto;
+	margin:10px auto 70px auto;
 }
 .carousel-indicators {
-	bottom: -100px;
+	bottom: -70px;
 	left:46%;
 }
 .carousel-indicators li {
@@ -196,7 +209,6 @@ nav a:hover {
 	width:100%;
 	margin:5px auto; 
 	padding:10px 2px 10px 2px;
-	height:410px;
 }	
 .dalee a {
 	color:#2ca9e4;
@@ -209,10 +221,10 @@ nav a:hover {
 .dalee1 a {
 	color:#2ca9e4;
 	text-decoration:underline;
-	font-size:12px;
-	position:absolute;
-	bottom:24px;
-	right:0px;
+	font-size:12px;	
+}
+.otzyvy p.dalee1{
+	text-align: right;
 }
 .advant {
     color:black;
@@ -234,7 +246,6 @@ nav a:hover {
 	position:relative;
 }
 .otzyvy p {
-	height:130px;
 	position:relative;
 	font-size: 14px;
 	text-align:justify;
@@ -321,12 +332,14 @@ aside ul li {
 	font-weight: 100;
 }
 .carousel-caption {
-	right:5%;
+	right:15%;
 	top:100px;
-	left: 70%;
+	left: auto;
 	padding-bottom: 40px;
 	letter-spacing: 1.15px;
 	text-shadow: none;
+	width: 25%;
+	text-align: left;
 
 }
 .carousel-caption strong {
@@ -338,9 +351,9 @@ aside ul li {
 	margin-top: 20px;
 	background-color: #4a86d9;
 }
-.bloki ul li  a {
+.bloki ul li a {
 	display:block;			
-	color:#fde101;
+	
 	background-color:#ffffff; 	
 	padding: 7px 13px;
 	-webkit-border-radius: 20px;
@@ -429,9 +442,9 @@ ol {
 	counter-reset: li; /* Initiate a counter */
 	list-style: none; /* Remove default numbering */
 	*list-style: decimal; /* Keep using default numbering for IE6/7 */
-	font: 15px 'trebuchet MS', 'lucida sans';
+	font: 15px;
 	padding: 0;
-	margin-bottom: 4em;
+	margin-bottom: 20px;
 	text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 .rounded-list li {
@@ -454,3 +467,102 @@ ol {
 .carousel-control.left, .carousel-control.right{
 	background-image: none;
 }
+.null{
+	clear: both;
+}
+/*************   style for carousel **************/
+#intro {
+	width: 580px;
+	margin: 0 auto;
+}
+.wrapper {
+	background-color: white;
+	width: 480px;
+	margin: 40px auto;
+	padding: 50px;
+	box-shadow: 0 0 5px #999;
+}
+.list_carousel {
+	background-color: #dbe7f7;
+	margin: 0px;
+	width: 100%;
+	position: relative;
+}
+.list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.list_carousel li {
+	font-size: 40px;
+	color: #999;
+	text-align: center;	
+	margin: 6px;
+	display: block;
+	float: left;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-bottom: 4px;
+}
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
+
+.prev {
+	float: left;
+	margin-left: 10px;
+	position: absolute;
+	left: 10px;
+	top: 25px;
+	padding: 5px 10px;
+	border-radius: 25px;
+	background-color: #4a86d9;
+}
+.next {
+	float: right;
+	margin-right: 10px;
+	position: absolute;
+	right: 10px;
+	top: 25px;
+	padding: 5px 10px;
+	border-radius: 25px;
+	background-color: #4a86d9;
+}	
+.prev > .fa, .next > .fa {
+	color: #dbe7f7;
+}
+
+.pager {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.pager a {
+	margin: 0 5px;
+	text-decoration: none;
+}
+.pager a.selected {
+	text-decoration: underline;
+}
+.timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
+/******** END *********/
+
+#foo2 {
+	width: 100%;
+}
+.caroufredsel_wrapper {
+	width: 100%;
+}
+
