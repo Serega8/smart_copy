@@ -6,12 +6,16 @@
 /*Общие стили*/
 body {
     color:#333;	 
-	background:#ffffff
+	background:#ffffff;
+	height: 100%;
+	position: relative;
 }
 .container { 
 	margin:0 auto;
-	min-width:1000px;
+	min-width:1100px;
 	max-width:1205px;
+	position: relative;
+	min-height: 100%;
 }
 a {
 	color:#2b82dc;
@@ -26,17 +30,17 @@ h1,h2,h3,h4,h5,h6 {
 	color:#2ca9e4;
 }
 h3 {
-	font-size:16px;
+	font-size:19px;
     font-weight:bold;
 }
 h4 {
-	font-size:14px;
+	font-size:16px;
     font-weight:bold;
 }
 p {
 	  
     line-height:1.4;
-    font-size:12px;
+    font-size:14px;
     margin-bottom:1em
 }
 ul {
@@ -88,7 +92,7 @@ header {
 .adress {
 	text-align:center; 
     margin:0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }	
 .spani {
@@ -143,7 +147,8 @@ nav li {
 nav a {
 	font-weight:bold;
     text-decoration:none;
-	color:#000000;
+	color:#4a86d9;
+	font-size: 14px;
 }
 nav a:hover {
 	text-decoration:underline;
@@ -159,7 +164,8 @@ nav a:hover {
 	margin:10px 10px 10px 10px;
 	color:#55bce7; 
 	text-decoration: none;
-	border-bottom: 1px dashed #55bce7; 
+	border-bottom: 1px dashed #55bce7;
+	font-size: 14px;	 
 }
 #sheme a:hover {
 	border-bottom: none;
@@ -209,6 +215,7 @@ nav a:hover {
 	width:100%;
 	margin:5px auto; 
 	padding:10px 2px 10px 2px;
+	font-weight: bolder;
 }	
 .dalee a {
 	color:#2ca9e4;
@@ -217,11 +224,13 @@ nav a:hover {
 	position:absolute;
 	bottom:10px; 
 	right:4px;
+	font-size:16px;
+	margin-top: 5px;
 }
 .dalee1 a {
 	color:#2ca9e4;
 	text-decoration:underline;
-	font-size:12px;	
+	font-size:16px;	
 }
 .otzyvy p.dalee1{
 	text-align: right;
@@ -240,6 +249,7 @@ nav a:hover {
 }
 .advant ul li {
    margin:10px 0;
+   font-size: 20px !important;
 }
 .otzyvy {
 	height:130px;
@@ -258,24 +268,26 @@ nav a:hover {
 
 .pic {
 	float:left;
-	width:120px; 
-	height:110px;
+	width:30%; 
+	height:100%;
+	margin:10px auto; 	
 }
 .pic img {
 	max-width:100%;
 }
 .text {
 	float:right;
-	width:230px;
-	height:110px;
+	width:70%;
+	height:100%;
+	font-size: 14px !important;
  }
 .lefts {
-	width:65%;
+	width:60%;
 	float:left;
 	padding-right:15px;
 }
 aside {
-	width:35%;
+	width:40%;
 	float:right;
 	padding-left: 10px;
 }
@@ -406,15 +418,21 @@ aside ul li {
 .smallslider {
 	height:100px;
 	width:100%;
-	margin:10px auto;
 	background-color:#dbe7f7;  
  }
 footer {
-    width:100%;
     margin:10px auto;
-    height:50px;
+    height: 50px;
     background:#ffffff;
-    font-size:12px;	
+    font-size:14px;	
+    position: absolute;
+    bottom: 0;
+    right: 0.5%;
+    left: 0.5%;
+}
+.helper{
+	height: 70px;
+	width: 100%;
 }
 footer ul {
 	float:right;	
@@ -437,7 +455,12 @@ footer a:hover {
 	float:left;
 	font-weight:bold;
 	margin:10px 10px 40px 10px;
+	font-size: 14px;
+	span {
+		font-size: 14px !important;	
+	}
 }
+
 ol {
 	counter-reset: li; /* Initiate a counter */
 	list-style: none; /* Remove default numbering */
@@ -493,8 +516,6 @@ ol {
 	padding: 0;
 	list-style: none;
 	display: block;
-	padding-left: 50px;
-	padding-right: 50px;
 }
 .list_carousel li {
 	font-size: 40px;
@@ -503,9 +524,10 @@ ol {
 	margin: 6px;
 	display: block;
 	float: left;
-	padding-left: 18px;
-	padding-right: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
 	padding-bottom: 4px;
+	min-width: 185px;
 }
 .list_carousel.responsive {
 	width: auto;
@@ -564,5 +586,7 @@ ol {
 }
 .caroufredsel_wrapper {
 	width: 100%;
+	min-width: 950px;
+	margin: 0 auto !important;
 }
 

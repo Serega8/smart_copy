@@ -97,7 +97,7 @@
 
                         </div>
 
-
+<div class="helper"></div>
                         <footer>
                             <div class="copy">
                                 &copy; <?=date('Y'), ' ', $smartcopy['description'];?>
@@ -129,22 +129,18 @@
         <? endforeach; ?>
          <script type="text/javascript">
             $('#foo2').carouFredSel({
-                // items               : 6,
-                direction           : "up",
-                    scroll : {
-                    items           : 2,
-                    easing          : "elastic",
-                    duration        : 1000,                         
-                    pauseOnHover    : true
-                    // }                  
+                items               : 5,
+                direction           : "left",
                 auto: false,
                 prev: '#prev2',
                 next: '#next2',
                 mousewheel: true,
-                    swipe: {
-                    onMouse: true,
-                    onTouch: true
-                    }
+                scroll : {
+                    items           : 1,
+                    duration        : 500,                         
+                    pauseOnHover    : true,
+                    }                  
+                
                 });
         </script>
         </div>
