@@ -1,8 +1,18 @@
 * {
-	margin:0;
-	padding:0;
-	outline:none
-} 
+  margin: 0;
+  padding: 0;
+}
+html {height: 100%;}
+* html body {height: 100%;}
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+* html #container {
+  height: 100%;
+}
 /*Общие стили*/
 body {
     color:#333;	 
@@ -249,7 +259,7 @@ nav a:hover {
 }
 .advant ul li {
    margin:10px 0;
-   font-size: 20px !important;
+   font-size: 14px;
 }
 .otzyvy {
 	height:130px;
@@ -589,4 +599,163 @@ ol {
 	min-width: 950px;
 	margin: 0 auto !important;
 }
+/*.............................SERVICE................*/
+.polosa {
+	color: #fff !important;
+	
+	margin: 5px 0 21px 0;;
+}
+.polosa h1, .polosa a {
+	display: inline-block;
+	color: #fff ;
+	font-size: 24px ;
 
+}
+.polosa a {
+	padding: 3px 20px 0px 20px; 
+
+}
+.polosa h1 {
+	padding: 3px 20px 0px 20px; 
+
+}
+	
+.polosa > .fa {
+	color: #fde101;	
+	background-color: #fff;
+	border-radius: 25px;
+	padding: 5px 10px;
+}	
+#serv {
+	background-color: #fde101;
+}
+#s_txt {
+	
+	font-weight: bold;
+}
+#s_txt h1 {
+	color: #18bdd1;
+	font-size: 19px;
+	text-align: center;
+}
+
+select {
+	width:100%;
+	padding: 8px;		
+}
+.s_img {
+	width:28%;
+	float:left;
+} 
+#s_txt {
+	width:70%;
+	margin-left: 2%;
+	float:right;
+}
+#s_txt input {
+	width:20%;
+	margin:3%;
+}
+#s_txt_m {
+	font-size: 19px;
+	font-weight: bold;
+	width:60%;
+	margin-left: 5%;
+}
+// img {
+// 	width: 100%;
+// 	height: 100%;
+// }
+#serv2 {
+	background-color: #37c6d7;
+}
+.n_content h1 {
+	font-size: 24px;
+	color: #4a86d9;
+}
+.stroka {
+
+}
+.n_left {
+	width: 35%;
+	color: #4a86d9;
+	font-size: 19px;
+	float: left;
+}
+
+.n_right {
+	width: 60%;
+	margin-left: 5%;
+	float: right;
+}
+.rew_left {
+	width: 10%;
+	float: left;
+}
+.rew_right {
+	width: 70%;
+	float: right;
+}
+.company {
+	color: #4a86d9;
+}
+.otzyv {
+	margin-bottom: 15px;
+}
+#serv3 {
+	background-color: #e360d2;
+}
+.choice {
+	.c1 {
+		float: left;
+		width: 30%;
+		margin-left: 5%;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	
+	.grey {
+		color: #bdbdbd;
+		font-size: 15px;
+	}
+}
+
+#s_txt input.raschet {
+	background-color: #18bdd1;
+	color: #fff;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	padding: 6px;
+	margin-left: 0;
+	border: none;
+
+}
+.polosa ul{
+	padding: 5px 0;
+	li{
+		display: block;
+		float: left;
+		a{
+			color: #fff;
+			font-size: 16px;
+		}
+		i{
+			font-size: 11px;
+			color: #fde101;
+
+		}
+	}
+	li.empty{
+		background: #fff;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		width: 21px;
+		text-align: center;
+		margin-top: 4px;
+	}
+}
