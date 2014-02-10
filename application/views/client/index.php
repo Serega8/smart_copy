@@ -1,4 +1,3 @@
-<? // print_r($articles); die;?>
 <? if (!empty($slides)) : ?>
 <!--SLIDER START-->
     <section class="carousel slide"> 
@@ -48,7 +47,7 @@
 				
 				<p><?=$articles[3]['description'];?></p>
 				<!--<a href="#"><img src="content/images/1c.jpg"></a>-->
-                                    <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('catalog/zapravka-kartridzhey', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 			<li id="blue">
 				<h1><?=$montazh['name'][0];?></h1>
@@ -56,7 +55,7 @@
 				
 				<p><?=$articles[4]['description']?></p>
 				<!--<a href="#"><img src="content/images/2c.jpg"></a>-->
-                                    <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('catalog/montazh-lokaljnyh-setey', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 			<li id="pink">
 				<h1><?=$so['name'][0]?></h1>
@@ -64,7 +63,7 @@
 				
 				<p> <?=$articles[5]['description']?></p>
 				<!--<a href="#"><img src="content/images/3c.jpg"></a>-->
-                                    <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('catalog/servernoe-oborudovanie', '<i class="fa fa-chevron-right"></i>');?>
                                     
 			</li>
 			<li id="yellow">
@@ -73,7 +72,7 @@
 				
 				<p> <?=$articles[6]['description']?></p>
 				<!--<a href="#"><img src="content/images/4c.jpg"></a>-->
-                                    <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('catalog/vosstanovlenie-zhestkih-diskov', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 			<li id="green">
 				<h1><?=$kt['name'][0]?></h1>
@@ -81,7 +80,7 @@
 				
 				<p><?=$articles[7]['description']?> </p>
 				<!--<a href="#"><img src="content/images/5c.jpg"></a>-->
-                                    <?=HTML::anchor('#', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('catalog/katalog-tovarov', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 		</ul>
 	</section>
