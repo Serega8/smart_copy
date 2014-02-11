@@ -7,6 +7,7 @@
 	</ul>
 </div>
 <? foreach($news as $new):?>
+<<<<<<< HEAD
 	<div class="stroka">
         <div class="n_left">
 			<img src="<?=$new['img_url']?>">
@@ -19,3 +20,9 @@
     </div>
 
 <? endforeach;?>
+=======
+<a href="/news/<?=$new['name_translit']?>"><?=$new['name']?></a><br />
+<img src="<?=$new['img_url']?>"><br />
+<?=$new['description']?><br /><br />
+<? endforeach;?>
+>>>>>>> 27efe53dbc19cc9a7b01e0143dbabedf5c3b842b

@@ -47,6 +47,7 @@ class Model_Articles extends ORM {
             $res['date'] = $inf->date;
             $res['name_translit'] = $inf->name_translit;
             $res['description'] = $inf->description;
+            $res['descr'] = $inf->descr;
             $res['status'] = $inf->status;
             $res['k'] = $inf->keywords;
             $c[] = $res;
@@ -72,6 +73,7 @@ class Model_Articles extends ORM {
             $res['date'] = $inf->date;
             $res['name_translit'] = $inf->name_translit;
             $res['description'] = $inf->description;
+            $res['descr'] = $inf->descr;
             $res['status'] = $inf->status;
             $res['k'] = $inf->keywords;
             $c[] = $res;
@@ -113,8 +115,6 @@ class Model_Articles extends ORM {
         $news             = ORM::factory('Articles')->all_articles();
         $all = $model->where('status', '!=', '3')
                 ->and_where('keywords', '=', 'pr')
-                //->order_by('id', 'DESC')
-                //->limit(8)
                 ->find_all();
         foreach ($all as $inf) {
             $res['id'] = $inf->id;
@@ -144,6 +144,8 @@ class Model_Articles extends ORM {
         $res['t'] = $inf->title;
         $res['name'] = $inf->name;
         $res['date'] = $inf->date;
+        $img = ORM::factory('Articleimages')->where('parent_id', '=', $res['id'])->limit(1)->find();
+        $res['img_url'] = $img->img_url;
         $res['name_translit'] = $inf->name_translit;
         $res['description'] = $inf->description;
         $res['status'] = $inf->status;

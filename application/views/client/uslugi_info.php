@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 1 услуга
 
@@ -52,3 +53,10 @@
         <input type="submit" value="Рассчитать">
         </form>
 </div>
+=======
+<p><a href="/uslugi"><--- Вернуться ко всем услугам</a></p>
+<?=$uslugi['name'] ?><br />    
+<img src="<?=$uslugi['img_url'] ?>"><br />    
+<?=$uslugi['description'] ?>    
+<p><a href="/uslugi"><--- Вернуться ко всем услугам</a></p>
+>>>>>>> 27efe53dbc19cc9a7b01e0143dbabedf5c3b842b

@@ -24,7 +24,8 @@ class Controller_Client extends Controller_Template {
         $this->template->sub_menu = $categories['sub'];
         $this->template->smartcopy = ORM::factory('Articles')->article('smartkopi');
         $this->template->logotip = ORM::factory('Articleimages')->get_images(3);
-        $this->template->feedback = ORM::factory('Feedback')->get_all_tags();
+        //$this->template->feedback = ORM::factory('Feedback')->get_all_tags();
+        $this->template->contacts = ORM::factory('Contacts')->get_contacts();
         
 
         $styles = array(
@@ -93,45 +94,55 @@ class Controller_Client extends Controller_Template {
     }
     
     public function action_news() {
-         $view = View::factory('client/news');
-         $news                    = ORM::factory('Articles')->news();
-         $view->news              = $news;
-         $this->template->content = $view;
-    }
-    
-    public function action_uslugi() {
-         $view = View::factory('client/uslugi');
-         $uslugi                  = ORM::factory('Articles')->uslugi();  
-         $view->uslugi            = $uslugi;
-         $this->template->content = $view;
-    }
-    
-    public function action_uslugi2() {
         $action = $this->request->action();
         $this->template->action = $action;
         $param = $this->request->param();
         $level2 = isset($param['level2']) ? $param['level2'] : NULL;
-        $level3 = isset($param['level3']) ? $param['level3'] : NULL;
-        $level4 = isset($param['level4']) ? $param['level4'] : NULL;
-        $level5 = isset($param['level5']) ? $param['level5'] : NULL;
+        $var = 'list_news';
+        if ($level2 !== NULL) {
+            $var = 'news_info';
+        }
+        switch ($var) {
+            case 'list_news':
+                $view = View::factory('client/news');
+                $news = ORM::factory('Articles')->news();
+                $view->news = $news;
+
+                $this->template->content = $view;
+                break;
+            case 'news_info':
+                $view = View::factory('client/news_info');
+                $news = ORM::factory('Articles')->article($level2);
+                $view->news = $news;
+                $this->template->content = $view;
+                break;
+            default:
+                die;
+                break;
+        }
+    }
+        
+    public function action_uslugi() {
+        $action = $this->request->action();
+        $this->template->action = $action;
+        $param = $this->request->param();
+        $level2 = isset($param['level2']) ? $param['level2'] : NULL;
         $var = 'list_uslugi';
         if ($level2 !== NULL) {
             $var = 'uslugi_info';
         }
         switch ($var) {
-            case 'list_articles':
+            case 'list_uslugi':
                 $view = View::factory('client/uslugi');
-                $articles = ORM::factory('Articles')->all_articles();
-                $view->articles = $articles;
+                $uslugi = ORM::factory('Articles')->uslugi();
+                $view->uslugi = $uslugi;
 
-                $this->template->seo = ORM::factory('Brands')->seo('articles');
                 $this->template->content = $view;
                 break;
-            case 'article_info':
+            case 'uslugi_info':
                 $view = View::factory('client/uslugi_info');
-                $article = ORM::factory('Articles')->article($level2);
-                $view->article = $article;
-                $view->images = ORM::factory('Articleimages')->get_images($article['id']);
+                $uslugi = ORM::factory('Articles')->article($level2);
+                $view->uslugi = $uslugi;
                 $this->template->content = $view;
                 break;
             default:
@@ -150,11 +161,14 @@ class Controller_Client extends Controller_Template {
         $this->template->content = $view;
     }
     
+<<<<<<< HEAD
    public function action_about() {
         $view = View::factory('client/about');
         $this->template->content = $view;
    }
 
+=======
+>>>>>>> 27efe53dbc19cc9a7b01e0143dbabedf5c3b842b
     public function action_poll() {
         if ($this->request->post()) {
             if (is_numeric($_POST['poll'])) {
@@ -285,7 +299,7 @@ class Controller_Client extends Controller_Template {
     public function action_contacts() {
         $action = $this->request->action();
         $view = View::factory('client/contacts');
-        $view->c = ORM::factory('Contacts')->get_contacts();
+        $view->contacts = ORM::factory('Contacts')->get_contacts();
         $kdst = ORM::factory('Contacts')->seo($action);
         $this->template->seo = $kdst;
         $this->template->content = $view;
@@ -433,6 +447,7 @@ class Controller_Client extends Controller_Template {
         $this->template->seo = ORM::factory('Brands')->seo('feedback');
         $this->template->content = $view;
     }
+  
 
     public static function to_arr_msg($text) {
         $result = array();
