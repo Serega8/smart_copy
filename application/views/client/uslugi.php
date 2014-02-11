@@ -5,7 +5,7 @@
 <img src="<?=$usl['img_url']?>"><br />
 <?=$usl['description']?><br /><br />
 <? endforeach;?>
-
+<? die;?>
 <div class="polosa" id="serv2">
     <ul>
 		<li><a href="/uslugi">Услуги</a></li>

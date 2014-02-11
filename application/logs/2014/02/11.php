@@ -533,3 +533,56 @@
 #13 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
 #14 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/contacts.php:40
 >>>>>>> 27efe53dbc19cc9a7b01e0143dbabedf5c3b842b
+
+2014-02-11 22:10:39 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: zapravka ~ APPPATH/views/client/uslugi.php [ 28 ] in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi.php:28
+2014-02-11 22:10:39 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi.php(28): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/intellect...', 28, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(61): include('/home/intellect...')
+#2 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/intellect...', Array)
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/template.php(88): Kohana_View->__toString()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(61): include('/home/intellect...')
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/intellect...', Array)
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#11 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi.php:28
+2014-02-11 22:10:50 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'endforeach' (T_ENDFOREACH) ~ APPPATH/views/client/news.php [ 27 ] in file:line
+2014-02-11 22:10:50 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-02-11 22:15:31 --- EMERGENCY: View_Exception [ 0 ]: The requested view client/company could not be found ~ SYSPATH/classes/Kohana/View.php [ 257 ] in /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php:137
+2014-02-11 22:15:31 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(137): Kohana_View->set_filename('client/company')
+#1 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(30): Kohana_View->__construct('client/company', NULL)
+#2 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(160): Kohana_View::factory('client/company')
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_company()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#9 {main} in /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php:137
+2014-02-11 22:18:12 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected 'endforeach' (T_ENDFOREACH) ~ APPPATH/views/client/news.php [ 27 ] in file:line
+2014-02-11 22:18:12 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-02-11 22:26:07 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: zapravka ~ APPPATH/views/client/uslugi.php [ 28 ] in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi.php:28
+2014-02-11 22:26:07 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi.php(28): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/intellect...', 28, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(61): include('/home/intellect...')
+#2 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/intellect...', Array)
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/template.php(88): Kohana_View->__toString()
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(61): include('/home/intellect...')
+#6 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/intellect...', Array)
+#7 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#11 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#14 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi.php:28
+2014-02-11 22:46:52 --- EMERGENCY: ErrorException [ 4 ]: syntax error, unexpected '?>', expecting '(' ~ APPPATH/views/client/uslugi_info.php [ 21 ] in file:line
+2014-02-11 22:46:52 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line

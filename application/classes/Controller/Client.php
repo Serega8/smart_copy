@@ -161,14 +161,13 @@ class Controller_Client extends Controller_Template {
         $this->template->content = $view;
     }
     
-<<<<<<< HEAD
+
    public function action_about() {
         $view = View::factory('client/about');
         $this->template->content = $view;
    }
 
-=======
->>>>>>> 27efe53dbc19cc9a7b01e0143dbabedf5c3b842b
+
     public function action_poll() {
         if ($this->request->post()) {
             if (is_numeric($_POST['poll'])) {
