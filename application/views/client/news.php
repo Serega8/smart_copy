@@ -1,7 +1,7 @@
 <div class="polosa news" id="serv3">
 	<ul>
 		<li><a href="/">Главная</a></li>
-	    <li class="empty"><i class="fa fa-chevron-right" id="pink_color"></i></li>
+	    <li class="empty"><i class="fa fa-chevron-right" id="blue_color"></i></li>
     	<li><a href="/news">Новости</a></li>
     	<div class="null"></div>
 	</ul>
