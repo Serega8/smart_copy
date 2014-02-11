@@ -1,3 +1,4 @@
+<!--страница одной услуги-->
 <? //print_r($feedback); die;?>
 <!DOCTYPE html>
 <html>
@@ -55,10 +56,10 @@
                                <!--NAV START-->
         <nav> 
             <ul> 
-                <li>
+                                <li>
                                     <?=HTML::anchor('/main/', 'Главная');?>
                                 </li>
-                <li>
+                                <li>
                                     <?=HTML::anchor('/about/', 'О компании');?>
                                 </li>
                                 <li>
@@ -67,7 +68,7 @@
                                 <li>
                                     <?=HTML::anchor('/news/', 'Новости');?>
                                 </li>
-                <li>
+                                <li>
                                     <?=HTML::anchor('/main/', 'Отзывы');?>
                                 </li>
                                 <li>

@@ -84,14 +84,43 @@ class Controller_Client extends Controller_Template {
           // вывод преимуществ
          $pr               = ORM::factory('Articles')->all_preimushestva();
          $view->pr       = $pr;
-//         echo "<pre>";
-//         print_r($pr); die;
          // вывод преимуществ
          
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
         
     }
+    
+    public function action_news() {
+         $view = View::factory('client/news');
+         $news                    = ORM::factory('Articles')->news();
+         $view->news              = $news;
+         $this->template->content = $view;
+    }
+    
+    public function action_uslugi() {
+         $view = View::factory('client/uslugi');
+         $uslugi                  = ORM::factory('Articles')->uslugi();   
+         $view->uslugi            = $uslugi;
+         $this->template->content = $view;
+    }
+    
+    public function action_otzivi() {
+        $view = View::factory('client/otzivi');
+        $this->template->content = $view;
+    }
+    
+    public function action_company() {
+        $view = View::factory('client/company');
+        $this->template->content = $view;
+    }
+    
+//    public function action_about() {
+//         $view = View::factory('client/about');
+//         $about                   = ORM::factory('Articles')->about();   
+//         $view->about             = $about;
+//         $this->template->content = $view;
+//    }
 
     public function action_poll() {
         if ($this->request->post()) {
@@ -254,6 +283,7 @@ class Controller_Client extends Controller_Template {
              * Весь каталог, т.е все главные категории (1-й уровень);
              */
             case 'list_categories':
+                echo 'list_categories';
                 $view = View::factory('client/categories');
                 $model = ORM::factory('Categories');
                 $view->categories = $model->list_categories();
@@ -264,14 +294,17 @@ class Controller_Client extends Controller_Template {
 
 
             case 'list_sub_categories':
-                $model_sub_categories = ORM::factory('Subcategories');
-                $all_sub_categories = $model_sub_categories->list_sub_categories($level2, true);
-                $all_products = ORM::factory('Products')->list_category_products($level2, true);
-                $view = View::factory('client/subcategories');
-                $this->template->seo = ORM::factory('Categories')->get_сategory_info($level2);
-                $view->level2 = $level2;
-                $view->products = $all_products;
-                $view->subcategories = $all_sub_categories;
+                echo 'list_sub_categories';
+                $model_sub_categories    = ORM::factory('Subcategories');
+                $all_sub_categories      = $model_sub_categories->list_sub_categories($level2, true);
+                $all_products            = ORM::factory('Products')->list_category_products($level2, true);
+                $view                    = View::factory('client/subcategories');
+                $this->template->seo     = ORM::factory('Categories')->get_сategory_info($level2);
+                $view->level2            = $level2;
+                $view->products          = $all_products;
+                $view->subcategories     = $all_sub_categories;
+                $articles                = ORM::factory('Articles')->all_articles();
+                $view->articles          = $articles;
                 $this->template->content = $view;
                 break;
 
@@ -279,6 +312,7 @@ class Controller_Client extends Controller_Template {
 
 
             case 'list_products':
+                echo 'list_products';
                 $model_products = ORM::factory('Products');
                 $model_sub_categories = ORM::factory('Subcategories');
                 $count = $model_sub_categories->detect_sp($level2, $level3);

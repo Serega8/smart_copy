@@ -41,64 +41,61 @@
 				<h1><?=$zapravka['name'][0];?></h1>
 				<h2><?=$zapravka['name'][1];?></h2>
 				
-				<p><?=$articles[3]['description'];?></p>
+				<p><?=$articles[3]['descr'];?></p>
 				<!--<a href="#"><img src="content/images/1c.jpg"></a>-->
-                                    <?=HTML::anchor('catalog/zapravka-kartridzhey', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('uslugi/zapravka-kartridzhey', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 			<li id="blue">
 				<h1><?=$montazh['name'][0];?></h1>
 				<h2><?=$montazh['name'][1],' ',$montazh['name'][2];?></h2>
 				
-				<p><?=$articles[4]['description']?></p>
+				<p><?=$articles[4]['descr']?></p>
 				<!--<a href="#"><img src="content/images/2c.jpg"></a>-->
-                                    <?=HTML::anchor('catalog/montazh-lokaljnyh-setey', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('uslugi/montazh-lokaljnyh-setey', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 			<li id="pink">
 				<h1><?=$so['name'][0]?></h1>
 				<h2><?=$so['name'][1]?></h2>
 				
-				<p> <?=$articles[5]['description']?></p>
+				<p> <?=$articles[5]['descr']?></p>
 				<!--<a href="#"><img src="content/images/3c.jpg"></a>-->
-                                    <?=HTML::anchor('catalog/servernoe-oborudovanie', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('uslugi/servernoe-oborudovanie', '<i class="fa fa-chevron-right"></i>');?>
                                     
 			</li>
 			<li id="yellow">
 				<h1><?=$vzhd['name'][0]?></h1>
 				<h2><?=$vzhd['name'][1],' ',$vzhd['name'][2];?></h2>
 				
-				<p> <?=$articles[6]['description']?></p>
+				<p> <?=$articles[6]['descr']?></p>
 				<!--<a href="#"><img src="content/images/4c.jpg"></a>-->
-                                    <?=HTML::anchor('catalog/vosstanovlenie-zhestkih-diskov', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('uslugi/vosstanovlenie-zhestkih-diskov', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 			<li id="green">
 				<h1><?=$kt['name'][0]?></h1>
 				<h2><?=$kt['name'][1]?></h2>
 				
-				<p><?=$articles[7]['description']?> </p>
+				<p><?=$articles[7]['descr']?> </p>
 				<!--<a href="#"><img src="content/images/5c.jpg"></a>-->
-                                    <?=HTML::anchor('catalog/katalog-tovarov', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('katalog-tovarov', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 		</ul>
 	</section>
 <!--УСЛУГИ КОНЕЦ-->
-
 
 <!--НИЖНИЙ БЛОК НАЧАЛО-->
 	<article class="thirst">
     <!--ЛЕВЫЙ БЛОК ПРЕИМУЩЕСТВА И ОТЗЫВЫ НАЧАЛО-->
 		<section class="lefts">	
         <!--НАШИ ПРЕИМУЩЕСТВА НАЧАЛО-->
-			<div> 
-				<h3> Наши преимущества</h3> 
-
-				<ol class="rounded-list">
-                   <? foreach($pr as  $v):?>
-						<li><?=$v['description']?></li>
-                    <? endforeach;?>
-				</ol>	
-                                    
-			</div> 	
-                        <!--НАШИ ПРЕИМУЩЕСТВА КОНЕЦ-->
+        <div> 
+            <h3> Наши преимущества</h3> 
+            <ol class="rounded-list">
+                <? foreach ($pr as $v): ?>
+                    <li><?= $v['description'] ?></li>
+                <? endforeach; ?>
+            </ol>	
+        </div> 	
+        <!--НАШИ ПРЕИМУЩЕСТВА КОНЕЦ-->
                         <!--ОТЗЫВЫ НАЧАЛО-->
 			<div class="otzyvy" >
 				<h3><?=$articles[0]['name']?></h3> 

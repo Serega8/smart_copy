@@ -56,19 +56,19 @@
 		<nav> 
 			<ul> 
 				<li>
-                                    <?=HTML::anchor('/main/', 'Главная');?>
+                                    <?=HTML::anchor('/', 'Главная');?>
                                 </li>
 				<li>
-                                    <?=HTML::anchor('/about/', 'О компании');?>
+                                    <?=HTML::anchor('/company/', 'О компании');?>
                                 </li>
                                 <li>
-                                    <?=HTML::anchor('/services/', 'Услуги');?>
+                                    <?=HTML::anchor('/uslugi/', 'Услуги');?>
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/news/', 'Новости');?>
                                 </li>
 				<li>
-                                    <?=HTML::anchor('/main/', 'Отзывы');?>
+                                    <?=HTML::anchor('/otzivi/', 'Отзывы');?>
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/contact/', 'Контакты');?>
@@ -104,16 +104,16 @@
                             </div>
 			<ul> 
 				<li>
-                                    <?=HTML::anchor('/about/', 'О компании');?>
+                                    <?=HTML::anchor('/company/', 'О компании');?>
                                 </li>
                                 <li>
-                                    <?=HTML::anchor('/services/', 'Услуги');?>
+                                    <?=HTML::anchor('/uslugi/', 'Услуги');?>
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/news/', 'Новости');?>
                                 </li>
 				<li>
-                                    <?=HTML::anchor('/main/', 'Отзывы');?>
+                                    <?=HTML::anchor('/otzivi/', 'Отзывы');?>
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/contact/', 'Контакты');?>
