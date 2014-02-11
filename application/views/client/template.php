@@ -57,7 +57,7 @@
                                     <?=HTML::anchor('/', 'Главная');?>
                                 </li>
 				<li>
-                                    <?=HTML::anchor('/company/', 'О компании');?>
+                                    <?=HTML::anchor('/about/', 'О компании');?>
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/uslugi/', 'Услуги');?>

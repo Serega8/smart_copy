@@ -103,12 +103,6 @@
         <img src="content/images/zapravka.png">
     </div>
     <div id="s_txt">
-        <p>
-
-        </p>
-        <p>
-
-        </p>
         <h1>Стоимость заправки картриджа</h1>
         <div class="choice">
             <div class="c1">

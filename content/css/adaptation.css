@@ -1,0 +1,8 @@
+@media (max-width: 1104px) {
+  .next{
+  	right: -8px;
+  }
+  .prev{
+  	left: -8px;
+  }
+}

@@ -96,7 +96,7 @@
 
 
 
-                <div class="smile">
+               <!--  <div class="smile">
                     <img src="content/images/review.jpeg">
                 </div>
                  <div class="rew_content">
@@ -143,7 +143,7 @@
                     </div>           
                               
                 </div>
-
+ -->
 
 
 
