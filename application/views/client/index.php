@@ -100,7 +100,7 @@
 			<div class="otzyvy" >
 				<h3><?=$articles[0]['name']?></h3> 
 				<p><?=$articles[0]['description']?></p>
-                                    <p class="dalee1"><?=HTML::anchor('#', 'Читать далее');?><p>		
+                                    <p class="dalee1"><?=HTML::anchor('/otzivi', 'Читать все отзывы');?><p>		
 			</div> 	
                         <!--ОТЗЫВЫ КОНЕЦ-->
 		</section>
@@ -108,7 +108,7 @@
                  <!--НОВОСТИ НАЧАЛО-->
 		<aside>
 			<h3 id="news">Новости </h3>
-                            
+                            <? //print_r($news); die;?>
                             <ul>
                              <? foreach($news as  $v):?>
 				<li><div class="pic"> 
@@ -119,7 +119,7 @@
 					</div>
 					<div class="clear"> </div>
 					<p class="dalee"> 
-                                            <?=HTML::anchor('#', 'Читать далее');?>
+                                            <?=HTML::anchor("/news/".$v['name_translit'], 'Читать далее');?>
                                             </p>
 				</li>
                              <? endforeach;?>
