@@ -1,4 +1,3 @@
-<? //print_r($feedback); die;?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +7,6 @@
         <? foreach ($styles as $style) : ?>
             <?= HTML::style($style); ?>
         <? endforeach; ?>
-
        
         <title><? if (!empty($seo)) echo $seo['t']; ?></title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -29,8 +27,8 @@
                 <a href="/"><?=HTML::image($logotip[0]['img_url'], array('width' => '110px', 'height' => '64px'));?></a>
 			</article>
 			<article class="connectiv"> 
-				<p class="tel"><?=$feedback['0']['placeholder']?></p>
-				<p class="adress"> <?=$feedback['1']['placeholder']?> <?=$feedback['2']['placeholder']?></p>
+                            <p class="tel"><?=$contacts['gorod']?></p>
+			    <p class="adress"> <?=$contacts['adr']?> <?=$contacts['other']?></p>
 			</article>
 			<article class="r_blok"> 
 				<form>
@@ -74,7 +72,7 @@
                                     <?=HTML::anchor('/otzivi/', 'Отзывы');?>
                                 </li>
                                 <li>
-                                    <?=HTML::anchor('/contact/', 'Контакты');?>
+                                    <?=HTML::anchor('/contacts/', 'Контакты');?>
                                 </li>
 			</ul>
                         <!--схема проезда начало-->
@@ -84,13 +82,6 @@
 		</nav>
                             <!--NAV END-->
                             </div>
-<!-------------------------------------------------------->
-                             <?// if (!empty($menu)) : ?>
-                                    <?// foreach ($menu as $m) : ?>
-                                        <!--<a href="/catalog/<? //echo $m['translit_name']; ?>"><? // echo $m['name']; ?></a>-->
-                                    <?// endforeach; ?>
-                                <?// endif; ?>
- <!-------------------------------------------------------->                           
                             
                             <div id="content">
 
@@ -122,7 +113,7 @@
                                     <?=HTML::anchor('/otzivi/', 'Отзывы');?>
                                 </li>
                                 <li>
-                                    <?=HTML::anchor('/contact/', 'Контакты');?>
+                                    <?=HTML::anchor('/contacts/', 'Контакты');?>
                                 </li>
 			</ul>	
 			<div class="clear"></div>

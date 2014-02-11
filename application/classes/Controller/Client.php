@@ -24,7 +24,8 @@ class Controller_Client extends Controller_Template {
         $this->template->sub_menu = $categories['sub'];
         $this->template->smartcopy = ORM::factory('Articles')->article('smartkopi');
         $this->template->logotip = ORM::factory('Articleimages')->get_images(3);
-        $this->template->feedback = ORM::factory('Feedback')->get_all_tags();
+        //$this->template->feedback = ORM::factory('Feedback')->get_all_tags();
+        $this->template->contacts = ORM::factory('Contacts')->get_contacts();
         
 
         $styles = array(
@@ -89,13 +90,6 @@ class Controller_Client extends Controller_Template {
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
         
-    }
-    
-    public function action_news2() {
-         $view = View::factory('client/news');
-         $news                    = ORM::factory('Articles')->news();
-         $view->news              = $news;
-         $this->template->content = $view;
     }
     
     public function action_news() {
@@ -166,13 +160,6 @@ class Controller_Client extends Controller_Template {
         $this->template->content = $view;
     }
     
-//    public function action_about() {
-//         $view = View::factory('client/about');
-//         $about                   = ORM::factory('Articles')->about();   
-//         $view->about             = $about;
-//         $this->template->content = $view;
-//    }
-
     public function action_poll() {
         if ($this->request->post()) {
             if (is_numeric($_POST['poll'])) {
@@ -303,7 +290,7 @@ class Controller_Client extends Controller_Template {
     public function action_contacts() {
         $action = $this->request->action();
         $view = View::factory('client/contacts');
-        $view->c = ORM::factory('Contacts')->get_contacts();
+        $view->contacts = ORM::factory('Contacts')->get_contacts();
         $kdst = ORM::factory('Contacts')->seo($action);
         $this->template->seo = $kdst;
         $this->template->content = $view;
@@ -451,6 +438,7 @@ class Controller_Client extends Controller_Template {
         $this->template->seo = ORM::factory('Brands')->seo('feedback');
         $this->template->content = $view;
     }
+  
 
     public static function to_arr_msg($text) {
         $result = array();

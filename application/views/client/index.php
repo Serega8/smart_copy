@@ -108,14 +108,13 @@
                  <!--НОВОСТИ НАЧАЛО-->
 		<aside>
 			<h3 id="news">Новости </h3>
-                            <? //print_r($news); die;?>
                             <ul>
-                             <? foreach($news as  $v):?>
+                             <? foreach($news as $v):?>
 				<li><div class="pic"> 
                                             <?=HTML::image($v['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
 					<div class="text">
 					<h4><?=$v['name']?></h4>
-					<p><?=$v['description']?></p>
+					<p><?=$v['descr']?></p>
 					</div>
 					<div class="clear"> </div>
 					<p class="dalee"> 

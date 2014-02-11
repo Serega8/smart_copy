@@ -47,6 +47,7 @@ class Model_Articles extends ORM {
             $res['date'] = $inf->date;
             $res['name_translit'] = $inf->name_translit;
             $res['description'] = $inf->description;
+            $res['descr'] = $inf->descr;
             $res['status'] = $inf->status;
             $res['k'] = $inf->keywords;
             $c[] = $res;
@@ -72,6 +73,7 @@ class Model_Articles extends ORM {
             $res['date'] = $inf->date;
             $res['name_translit'] = $inf->name_translit;
             $res['description'] = $inf->description;
+            $res['descr'] = $inf->descr;
             $res['status'] = $inf->status;
             $res['k'] = $inf->keywords;
             $c[] = $res;
