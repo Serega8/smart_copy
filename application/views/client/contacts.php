@@ -14,7 +14,7 @@
             <h2>Форма обратной связи</h2>
             
             
-            <form action="/feedback" class="user-form">
+            <form action="/feedback" class="user-form" method="POST">
                 <div id="inputArea">
                     <div class="field">
                         <input type="text" size="20" id="user-name" name="user-name" class="form-element" placeholder="Имя" value="" required/>
