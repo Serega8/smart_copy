@@ -49,16 +49,10 @@
             <h2>Форма обратной связи</h2>
             <form action="#" class="user-form">
                 <div id="inputArea">
-                    <div class="field">
-                        <input type="text" size="20" id="user-name" name="user-name" class="form-element" placeholder="Имя" value="" required/>
-                    </div> <!-- field -->
-                     <div class="field">
-                        <input type="email" size="20" id="email" name="email" class="form-element" placeholder="E-mail" value="" required/>
-                    </div><!-- field -->
-                     <div class="field">
-                        <input type="text" size="20" id="phone" name="phone" class="form-element" placeholder="Телефон" value="" required/>
-                    </div><!-- field -->
-                    <div class="null"></div>
+                    <input type="text" size="20" id="user-name" name="user-name" class="form-element" placeholder="Имя" value="" required/>
+                    <input type="email" size="20" id="email" name="email" class="form-element" placeholder="E-mail" value="" required/>
+                    <input type="text" size="20" id="phone" name="phone" class="form-element" placeholder="Телефон" value="" required/>
+                <div class="null"></div>
                 </div><!-- inputArea -->
                 <div class="wrap-message">
                     <textarea id="message" cols="47" rows="8" name="message" class="form-element" placeholder="Сообщение"></textarea>

@@ -32,6 +32,7 @@ class Controller_Client extends Controller_Template {
             'content/css/bootstrap-responsive.min.css',
             'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
             'content/css/style.css',
+            'content/css/adaptation.css',
         );
         $scripts = array(
             'content/client_js/jquery.min.js',
@@ -149,12 +150,10 @@ class Controller_Client extends Controller_Template {
         $this->template->content = $view;
     }
     
-//    public function action_about() {
-//         $view = View::factory('client/about');
-//         $about                   = ORM::factory('Articles')->about();   
-//         $view->about             = $about;
-//         $this->template->content = $view;
-//    }
+   public function action_about() {
+        $view = View::factory('client/about');
+        $this->template->content = $view;
+   }
 
     public function action_poll() {
         if ($this->request->post()) {

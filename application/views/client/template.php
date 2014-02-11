@@ -59,7 +59,7 @@
                                     <?=HTML::anchor('/', 'Главная');?>
                                 </li>
 				<li>
-                                    <?=HTML::anchor('/company/', 'О компании');?>
+                                    <?=HTML::anchor('/about/', 'О компании');?>
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/uslugi/', 'Услуги');?>
@@ -74,7 +74,7 @@
                                     <?=HTML::anchor('/otzivi/', 'Отзывы');?>
                                 </li>
                                 <li>
-                                    <?=HTML::anchor('/contact/', 'Контакты');?>
+                                    <?=HTML::anchor('/contacts/', 'Контакты');?>
                                 </li>
 			</ul>
                         <!--схема проезда начало-->
