@@ -65,6 +65,9 @@
                                     <?=HTML::anchor('/uslugi/', 'Услуги');?>
                                 </li>
                                 <li>
+                                    <?=HTML::anchor('/catalog/', 'Каталог');?>
+                                </li>
+                                <li>
                                     <?=HTML::anchor('/news/', 'Новости');?>
                                 </li>
 				<li>
@@ -108,6 +111,9 @@
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/uslugi/', 'Услуги');?>
+                                </li>
+                                <li>
+                                    <?=HTML::anchor('/catalog/', 'Каталог');?>
                                 </li>
                                 <li>
                                     <?=HTML::anchor('/news/', 'Новости');?>

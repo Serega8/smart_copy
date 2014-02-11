@@ -100,9 +100,43 @@ class Controller_Client extends Controller_Template {
     
     public function action_uslugi() {
          $view = View::factory('client/uslugi');
-         $uslugi                  = ORM::factory('Articles')->uslugi();   
+         $uslugi                  = ORM::factory('Articles')->uslugi();  
          $view->uslugi            = $uslugi;
          $this->template->content = $view;
+    }
+    
+    public function action_uslugi2() {
+        $action = $this->request->action();
+        $this->template->action = $action;
+        $param = $this->request->param();
+        $level2 = isset($param['level2']) ? $param['level2'] : NULL;
+        $level3 = isset($param['level3']) ? $param['level3'] : NULL;
+        $level4 = isset($param['level4']) ? $param['level4'] : NULL;
+        $level5 = isset($param['level5']) ? $param['level5'] : NULL;
+        $var = 'list_uslugi';
+        if ($level2 !== NULL) {
+            $var = 'uslugi_info';
+        }
+        switch ($var) {
+            case 'list_articles':
+                $view = View::factory('client/uslugi');
+                $articles = ORM::factory('Articles')->all_articles();
+                $view->articles = $articles;
+
+                $this->template->seo = ORM::factory('Brands')->seo('articles');
+                $this->template->content = $view;
+                break;
+            case 'article_info':
+                $view = View::factory('client/uslugi_info');
+                $article = ORM::factory('Articles')->article($level2);
+                $view->article = $article;
+                $view->images = ORM::factory('Articleimages')->get_images($article['id']);
+                $this->template->content = $view;
+                break;
+            default:
+                die;
+                break;
+        }
     }
     
     public function action_otzivi() {
