@@ -53,11 +53,11 @@
         }
         ?>
         </div>
-                    <img src="/file.png?<?=date('U');?>" alt="13"/>
-         <div class="inputArea" >
-                    <input type="text" name="txtpic" class="form-element"/> 
+             <img src="/file.png?<?=date('U');?>" alt="13" style="float:left"/>
+                <div class="inputArea" >
+                    <input type="text" name="txtpic" class="form-element" style="float:left"/> 
                 </div>
-        <input type="submit" id="submit-form" name="submit-form" class="submit-button" value="Отправить"/>
+        <input type="submit" id="submit-form" name="submit-form" class="submit-button"  value="Отправить"/>
 
     </form>
 </div> 
