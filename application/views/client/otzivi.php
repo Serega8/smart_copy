@@ -18,6 +18,7 @@
                             <p class="person">Людмила</p>
                             <p class="date">3янв14</p>
                         </div>
+                        <div class="null"></div>
                     </div> 
                     <div class="rew_stroka">
                         <div class="rew_left">
@@ -28,6 +29,7 @@
                             <p class="person">Иван</p>
                             <p class="date">5янв14</p>
                         </div>
+                        <div class="null"></div>
                     </div>           
                     <div class="rew_stroka">
                         <div class="rew_left">
@@ -38,6 +40,7 @@
                             <p class="person">Алла</p>
                             <p class="date">6февр14</p>
                         </div>
+                        <div class="null"></div>
                     </div>           
                     <div class="rew_stroka">
                         <div class="rew_left">
@@ -48,6 +51,7 @@
                             <p class="person">Мефодий</p>
                             <p class="date">23дек13</p>
                         </div>
+                        <div class="null"></div>
                     </div>           
                               
                 </div>

@@ -25,26 +25,23 @@
         <div class="errors"><?= $msg; ?></div>
     <? } ?>
     <form method="POST" action="/contacts">
+        <div class="inputArea">
         <?
         foreach ($exist as $ex) {
             switch ($ex['tag']) {
                 case 'input':
                     ?>
-                    <label><?= $ex['name']; ?></label>
-                    <input required type="<?= $ex['type']; ?>" name="<?= $ex['id']; ?>" placeholder="<?= $ex['placeholder']; ?>"/>
-                    <br/>
+                    
+                    <input type="<?= $ex['type']; ?>" size="20"  name="<?= $ex['id']; ?>" class="form-element" placeholder="<?= $ex['placeholder']; ?>" value="" required/>
+                    
                     <?
                     break;
                 case 'textarea':
                     ?>
-                    <label><?= $ex['name']; ?></label>
-                    <textarea required class="feedback_rows" name="<?= $ex['id']; ?>" placeholder="<?= $ex['placeholder']; ?>"></textarea>
-                    <br/>
-                    <?
-                    break;
-                case 'select':
-                    ?>
-
+                     <div class="wrap-message">
+                    <textarea  cols="47" rows="8" name="<?= $ex['id']; ?>" class="" placeholder="<?= $ex['placeholder']; ?>"></textarea>
+                    </div>
+                    <div class="null"></div>
                     <?
                     break;
                 default:
@@ -55,32 +52,17 @@
             }
         }
         ?>
-                    <img src="/file.png?<?=date('u');?>" alt="13"/><input type="text" name="txtpic"/>
-        <button id="send_message">Отправить</button>
+        </div>
+                    <img src="/file.png?<?=date('U');?>" alt="13"/>
+         <div class="inputArea" >
+                    <input type="text" name="txtpic" class="form-element"/> 
+                </div>
+        <input type="submit" id="submit-form" name="submit-form" class="submit-button" value="Отправить"/>
+
     </form>
 </div> 
             
-            
-            
-            
-            
-            
-            
-<!--            <form action="/feedback" class="user-form" method="POST">
-                <div id="inputArea">
-                    <input type="text" size="20" id="user-name" name="user-name" class="form-element" placeholder="Имя" value="" required/>
-                    <input type="email" size="20" id="email" name="email" class="form-element" placeholder="E-mail" value="" required/>
-                    <input type="text" size="20" id="phone" name="phone" class="form-element" placeholder="Телефон" value="" required/>
-                <div class="null"></div>
-                </div> inputArea 
-                <div class="wrap-message">
-                    <textarea id="message" cols="47" rows="8" name="message" class="form-element" placeholder="Сообщение"></textarea>
-                </div> wrap-message 
-                <div class="wrap-submit-button">
-                    <input type="submit" id="submit-form" name="submit-form" class="submit-button" value="Отправить"/>
-                </div> wrap-submit-button 
-                <div class="null"></div>
-            </form>-->
+  
             
             
             
