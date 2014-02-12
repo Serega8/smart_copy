@@ -114,7 +114,7 @@
                                             <?=HTML::image($v['img_url'], array('width' => '110px', 'height' => '80px'));?></div>
 					<div class="text">
 					<h4><?=$v['name']?></h4>
-					<p><?=Text::limit_chars($v['description'],150,'...');?></p>
+					<p><?=Text::limit_chars($v['description'],250,'...');?></p>
 					</div>
 					<div class="clear"> </div>
 					<p class="dalee"> 

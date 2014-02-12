@@ -1,5 +1,5 @@
-<? echo "<pre>";
-print_r($categories); die;?>
+<? //echo "<pre>";
+//print_r($categories); die;?>
 <div class="polosa news" id="serv5">
 	<ul>
 		<li><a href="/">Главная</a></li>
