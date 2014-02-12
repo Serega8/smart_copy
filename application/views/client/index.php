@@ -15,6 +15,7 @@
                 <? foreach ($slides as $slide): ?>
                     <div class="item <? if($t==0): echo "active"; $t = 1; endif;?>">
                         <?=HTML::image($slide['img_url'], array('alt' => $slide['img_alt']));?>
+                    	
                     	<div class="carousel-caption">
                             <h3 class="slider_caption"><?= $slide['img_title']; ?></h3>
                             <?=HTML::anchor('#', 'Подробнее', array('class' => 'btn btn-large btn-primary'));?>
