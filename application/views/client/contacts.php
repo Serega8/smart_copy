@@ -1,4 +1,3 @@
-
   <div class="map">
             <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=C1vQNUUyKkIRlGElm9BqiOQWYdQvxVUv"></script>
         </div> <!-- map -->
@@ -12,23 +11,67 @@
         </div><!-- kontakt_info -->
         <div class="obratnaya_svyaz">
             <h2>Форма обратной связи</h2>
+            <div id="feedback">
+    <? if ($msg !== null) { ?>
+        <div class="errors"><?= $msg; ?></div>
+    <? } ?>
+    <form method="POST" action="/contacts">
+        <?
+        foreach ($exist as $ex) {
+            switch ($ex['tag']) {
+                case 'input':
+                    ?>
+                    <label><?= $ex['name']; ?></label>
+                    <input required type="<?= $ex['type']; ?>" name="<?= $ex['id']; ?>" placeholder="<?= $ex['placeholder']; ?>"/>
+                    <br/>
+                    <?
+                    break;
+                case 'textarea':
+                    ?>
+                    <label><?= $ex['name']; ?></label>
+                    <textarea required class="feedback_rows" name="<?= $ex['id']; ?>" placeholder="<?= $ex['placeholder']; ?>"></textarea>
+                    <br/>
+                    <?
+                    break;
+                case 'select':
+                    ?>
+
+                    <?
+                    break;
+                default:
+                    ?>
+                    Unknown tag;
+                    <?
+                    break;
+            }
+        }
+        ?>
+                    <img src="/file.png?<?=date('u');?>" alt="13"/><input type="text" name="txtpic"/>
+        <button id="send_message">Отправить</button>
+    </form>
+</div> 
             
             
-            <form action="/feedback" class="user-form" method="POST">
+            
+            
+            
+            
+            
+<!--            <form action="/feedback" class="user-form" method="POST">
                 <div id="inputArea">
                     <input type="text" size="20" id="user-name" name="user-name" class="form-element" placeholder="Имя" value="" required/>
                     <input type="email" size="20" id="email" name="email" class="form-element" placeholder="E-mail" value="" required/>
                     <input type="text" size="20" id="phone" name="phone" class="form-element" placeholder="Телефон" value="" required/>
                 <div class="null"></div>
-                </div><!-- inputArea -->
+                </div> inputArea 
                 <div class="wrap-message">
                     <textarea id="message" cols="47" rows="8" name="message" class="form-element" placeholder="Сообщение"></textarea>
-                </div><!-- wrap-message -->
+                </div> wrap-message 
                 <div class="wrap-submit-button">
                     <input type="submit" id="submit-form" name="submit-form" class="submit-button" value="Отправить"/>
-                </div><!-- wrap-submit-button -->
+                </div> wrap-submit-button 
                 <div class="null"></div>
-            </form>
+            </form>-->
             
             
             

@@ -1,7 +1,3 @@
-                <? print_r($_POST); ?>
-
-
-
 <!------------------------------------------------------>
 <!--<div class="rew_content">
     <h1>Отзывы</h1>
@@ -21,7 +17,7 @@
     <? if ($msg !== null) { ?>
         <div class="errors"><?= $msg; ?></div>
     <? } ?>
-    <form method="POST" action="">
+    <form method="POST" action="/contacts">
         <?
         foreach ($exist as $ex) {
             switch ($ex['tag']) {

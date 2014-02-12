@@ -294,6 +294,21 @@ class Controller_Client extends Controller_Template {
         $view->contacts = ORM::factory('Contacts')->get_contacts();
         $kdst = ORM::factory('Contacts')->seo($action);
         $this->template->seo = $kdst;
+        //$this->template->content = $view;
+        
+        
+        if ($this->request->post()) {
+            $msg = $this->add_message($_POST);
+        }
+        //$view = View::factory('client/feedback');
+        $model = ORM::factory('Feedback');
+        $exist = $model->get_all_tags();
+        $view->exist = $exist;
+        $captcha = $this->captcha();
+        $_SESSION['fcode'] = $captcha['cap'];
+        $view->msg = isset($msg) ? $msg : null;
+
+       // $this->template->seo = ORM::factory('Brands')->seo('feedback');
         $this->template->content = $view;
     }
 
