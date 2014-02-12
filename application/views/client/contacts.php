@@ -1,4 +1,4 @@
-  <div class="map">
+<div class="map">
             <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=C1vQNUUyKkIRlGElm9BqiOQWYdQvxVUv"></script>
         </div> <!-- map -->
         <div class="contact_content">
@@ -9,9 +9,9 @@
             <p><?=$contacts['adr']?></p>
             <p>Минск, Беларусь, 220015</p>
             <h3>Телефоны</h3>
-            <p>+375 (44) 578-32-45</p>
-            <p>+375 (29) 554-05-34</p>
-            <p>+375 (17) 202-76-89</p>
+            <p><?=$contacts['vel']?></p>
+            <p><?=$contacts['mts']?></p>
+            <p><?=$contacts['adr']?></p>
             <h3>Реквизиты</h3>
             <p>УНП 191687004</p>
             <p>р/с 3012023811014 в ОАО "Приорбанк" ЦБУ 109,</p>
