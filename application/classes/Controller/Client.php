@@ -160,7 +160,6 @@ class Controller_Client extends Controller_Template {
         $view = View::factory('client/company');
         $this->template->content = $view;
     }
-    
 
     public function action_poll() {
         if ($this->request->post()) {

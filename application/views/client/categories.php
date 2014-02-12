@@ -9,6 +9,14 @@
     <? endforeach; ?>
 <? } ?>
 
+<div class="polosa news" id="serv5">
+	<ul>
+		<li><a href="/">Главная</a></li>
+	    <li class="empty"><i class="fa fa-chevron-right"></i></li>
+    	<li><a href="#">Каталог</a></li>
+    	<div class="null"></div>
+	</ul>
+</div>
 
 <div class="content_data">
 		<div class="menu">
@@ -18,6 +26,17 @@
 					<ul>
 						<li>
 							<a href="#">Подкатегория</a>
+							<ul>
+								<li>
+									<a href="#">Подкатегория 2</a>
+								</li>
+								<li>
+									<a href="#">Подкатегория 2</a>
+								</li>
+								<li>
+									<a href="#">Подкатегория 2</a>
+								</li>
+							</ul>
 						</li>
 						<li>
 							<a href="#">Подкатегория</a>
@@ -35,6 +54,17 @@
 						</li>
 						<li>
 							<a href="#">Подкатегория</a>
+							<ul>
+								<li>
+									<a href="#">Подкатегория 2</a>
+								</li>
+								<li>
+									<a href="#">Подкатегория 2</a>
+								</li>
+								<li>
+									<a href="#">Подкатегория 2</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</li>
@@ -97,18 +127,28 @@
 			</ul>
 		</div>  <!-- menu -->
 <div class="table">
-	<div class="row">
-		<div class="name_product">Название товара</div>
-		<div class="price">Цена</div>
-	</div>
-	<div class="row">
-		<div class="cell1"></div>
-		<div class="cell2"></div>
-	</div>
-	<div class="row">
-		<div class="cell1"></div>
-		<div class="cell2"></div>
-	</div>
+	<table class="products">
+	    <tr>
+	        <td class="th">Название товара</td>
+	        <td class="th">Цена</td>
+	    </tr>
+	    <tr>
+	        <td>Kuocera TaskAlfa 180 - 18стр./мин. копир, A3 33 мб 600 dpi нагрузка 20000</td>
+	        <td>6 310 903</td>
+	    </tr>
+	    <tr>
+	         <td>Kuocera TaskAlfa 180 - 18стр./мин. копир, A3 33 мб 600 dpi нагрузка 20000</td>
+	        <td>6 310 903</td>
+	    </tr>
+	    <tr>
+	         <td>Kuocera TaskAlfa 180 - 18стр./мин. копир, A3 33 мб 600 dpi нагрузка 20000</td>
+	        <td>6 310 903</td>
+	    </tr>
+	    <tr>
+	         <td>Kuocera TaskAlfa 180 - 18стр./мин. копир, A3 35 мб 600 dpi нагрузка 20000</td>
+	        <td>6 310 903</td>
+	    </tr>
+	</table>
 </div> <!-- table -->
 <div class="null"></div>
 </div> <!-- content_data -->

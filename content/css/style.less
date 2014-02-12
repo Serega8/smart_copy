@@ -798,17 +798,42 @@ ol {
 	border-radius: 25px;
 	padding: 5px 7px;
 }	
-.polosa  .fa#pink_color{
-	color: #e360d2;
+
+.polosa.news#serv3{
+	background: #4a86d9;
+	i{
+		color: #4a86d9;	
+	}
 }
-.polosa  .fa#blue_color{
-	color: #37c6d7;
+.polosa.news#serv1{
+	background: #fde101;
+	i{
+		color: #fde101;	
+	}
 }
-.polosa  .fa#yellow_color{
-	color: #e360d2;
+.polosa.news#serv2{
+	background: #18bdd1;
+	i{
+		color: #18bdd1;	
+	}
 }
-#serv {
-	background-color: #fde101;
+.polosa.news#serv{
+	background: #78cd1a;
+	i{
+		color: #78cd1a;	
+	}
+}
+.polosa.news#serv4{
+	background: #e360d2;
+	i{
+		color: #e360d2;	
+	}
+}
+.polosa.news#serv5{
+	background: #dc1f26;
+	i{
+		color: #dc1f26;	
+	}
 }
 #s_txt {
 	
@@ -822,34 +847,34 @@ ol {
 
 select {
 	width:100%;
-	padding: 8px;		
+	padding: 7px;		
 }
 .s_img {
-	width:28%;
+	width:18%;
 	float:left;
+	margin-right: 2%;
 } 
 #s_txt {
-	width:70%;
+	width:80%;
 	margin-left: 2%;
 	float:right;
 }
 #s_txt input {
 	width:20%;
-	margin:3%;
+	margin:4% 0;
 }
 #s_txt_m {
 	font-size: 19px;
 	font-weight: bold;
-	width:60%;
-	margin-left: 5%;
+	width:70%;
+	
 }
 // img {
 // 	width: 100%;
 // 	height: 100%;
 // }
-#serv2 {
-	background-color: #37c6d7;
-}
+
+
 .n_content h1 {
 	font-size: 24px;
 	color: #4a86d9;
@@ -871,6 +896,7 @@ select {
 .n_right {
 	width: 78%;
 	float: right;
+	position: relative;
 
 }
 .person {
@@ -895,9 +921,7 @@ select {
 .otzyv {
 	margin-bottom: 15px;
 }
-#serv3 {
-	background-color: #e360d2;
-}
+
 .choice {
 	.c1 {
 		float: left;
@@ -962,7 +986,7 @@ select {
 	margin: 10px 0px;
 }	
 .contact_content {
-	margin: 20px 20px;
+	margin: 20px 0;
 }
 
 
@@ -1025,9 +1049,10 @@ select {
 	float: right;
 	color: #fff;
 	background-color: #4a86d9;
-	padding:3px 5px;
+	padding:5px 5px;
 	font-size: 16px;
 	border: none;
+
 }
 
 
@@ -1036,23 +1061,21 @@ select {
            МЕНЮ МЕНЮ МЕНЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮ
 =================================================================== */
 .content_data {
-
+	margin-top: 3%;
 }
 .menu { 
 	font-family: arial, sans-serif; 
-	width:170px; 	 
+	width:20%; 	 
 	position:relative; 	 
 	font-size:14px; 
-	margin-top:20px;
-	margin-left:20px;
 	float: left;
 	display: inline-block;
 }
 .menu ul li a, .menu ul li a:visited { 
 	display:block; 
 	text-decoration:none; 	 
-	width:170px; 
-	height:30px; 
+	width:100%; 
+	padding:4% 0; 
 	text-align:center; 
 	border:1px solid #BD3853; 
 	border-width:1px 1px 0 0; 
@@ -1067,8 +1090,7 @@ select {
 	list-style-type: none; 
 }
 .menu ul li { 
-	float:left; 
-	margin-right:1px; 
+	float:left;  
 	position:relative; 
 }
 .menu ul li ul, .menu ul li:hover ul li ul{ 
@@ -1081,30 +1103,28 @@ select {
 	display:block; 
 	position:absolute; 
 	top:0; 
-	left:171px; 
-	width:170px; 
+	left:100%; 
+	width:100%; 
 }
 .menu ul li:hover ul li a { 
-	background:#dc1f26; 	 
-}
-.menu ul li:hover ul li:hover a { 
-	width:170px; 
-}
-.menu ul li:hover ul li a { 
+	background:#dc1f26;
 	display:block; 
 	background:#dc1f26; 	 
-	width:170px; 
+	width:100%; 	 
+}
+.menu ul li:hover ul li:hover a { 
+	width:100%; 
 }
 
 .menu ul li:hover ul li:hover ul { 
 	display:block; 
 	position:absolute; 
-	left:171px; 
+	left:100%; 
 	top:0; 	 
 }
 .menu ul li:hover ul li:hover ul li a { 
 	display:block; 
-	width:170px; 
+	width:100%; 
 	background:#dc1f26; 	 
 }
 
@@ -1112,37 +1132,46 @@ select {
 
 /******************** table **************************/
 .table {
-	width: 500px;
-	margin: 20px;
-	border: 1px solid #000;
+	width: 78%;
+	margin-left: 2%;
+	border: none;
 	float:right;
 	display: inline-block;
-	border: 1px solid #919191;
+	
 	background-color:#ffffff;
 	color: #393939;
+	.th {
+		border-top: 1px solid #919191;
+		border-bottom: 1px solid #919191;
+		font-weight: bold;
+		text-align: center;
+	};
+	td {
+		border-bottom: 1px solid #919191;
+		border-left: 1px solid #919191;
+		border-right: 1px solid #919191;
+		padding: 6px;
+		&:first-child {
+			padding-right: 20px;
+			border-left: 1px solid #919191;
+		}
+	};
+	tr:nth-child(odd) {
+	background-color:#f2f2f2;
+	};
+}
+table {
+	width:100%;
 }
 .row {
-	border-top: 1px solid #919191;
+	
 	padding: 5px;
 }
-.row:nth-child(odd) {
-	background-color:#f2f2f2;
-}
-.cell1 {
-	width: 40%;
-}
-.cell2 {
-	width: 60%;
-}
-.polosa.news#serv3{
-	background: #4a86d9;
-	i{
-		color: #4a86d9;	
-	}
-}
+
+
+
 
 /******************** end  table **************************/
-
-.rew_left img {
+.rew_left img, .s_img img {
 	max-width:200px;
 }
