@@ -16,7 +16,7 @@
     <div class="s_txt_m">
 
     	<h3><?=$news['name']?></h3>
-        <h3><?=$news['date']?></h3>
+        <h3>Дата: <?=$news['date']?></h3>
 		<p><?=$news['description']?></p>
 
     </div>
