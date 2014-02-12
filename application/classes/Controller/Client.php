@@ -137,6 +137,23 @@ class Controller_Client extends Controller_Template {
                 $uslugi = ORM::factory('Articles')->uslugi();
                 $view->uslugi = $uslugi;
 
+                // вывод услуг 
+         $articles         = ORM::factory('Articles')->all_articles();
+         $zapravka['name'] = explode(' ', $articles[3]['name']);
+         $montazh['name']  = explode(' ', $articles[4]['name']);
+         $so['name']       = explode(' ', $articles[5]['name']);
+         $vzhd['name']     = explode(' ', $articles[6]['name']);
+         $kt['name']       = explode(' ', $articles[7]['name']);
+         $view->articles   = $articles;
+         $view->zapravka   = $zapravka;
+         $view->montazh    = $montazh;
+         $view->so         = $so;
+         $view->vzhd       = $vzhd;
+         $view->kt         = $kt;
+         // вывод услуг
+                
+                
+                
                 $this->template->content = $view;
                 break;
             case 'uslugi_info':
@@ -149,6 +166,8 @@ class Controller_Client extends Controller_Template {
                 die;
                 break;
         }
+        
+        
     }
     
     public function action_otzivi() {
