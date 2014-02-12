@@ -2,7 +2,12 @@
 <p><a href="/uslugi"><--- Вернуться ко всем услугам</a></p>
 
 
-<div class="polosa news" id="serv3">
+<div class="polosa news" id="serv3"> 
+ <!-- для заправки id="serv1" 
+      для монтажа id="serv2"
+      для серверного оборудования id="serv"
+      для восстановления ж.д. id="serv4"  
+-->
     <ul>
         <li><a href="#">Услуги</a></li>
         <li class="empty"><i class="fa fa-chevron-right"></i></li>
@@ -10,16 +15,6 @@
         <div class="null"></div>
     </ul>
 </div>
-<div class="polosa news" id="serv1">
-    <ul>
-        <li><a href="#">Услуги</a></li>
-        <li class="empty"><i class="fa fa-chevron-right"></i></li>
-        <li><a href="#"><?=$uslugi['name'] ?></a></li>
-        <div class="null"></div>
-    </ul>
-</div>
-
-
 
  <div class="s_content">
     <div class="s_img">

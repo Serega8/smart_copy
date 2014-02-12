@@ -1,9 +1,6 @@
 
 <? //print_r($uslugi); die;?>
 
-
-
-
 <div class="polosa news" id="serv3">
 	<ul>
 		<li><a href="/">Главная</a></li>
@@ -12,11 +9,6 @@
     	<div class="null"></div>
 	</ul>
 </div>
-
-
-
-
-
  <div class="s_content">
     <div class="s_img">
         <img src="<?=$news['img_url'] ?>">
@@ -27,11 +19,6 @@
         <h3><?=$news['date']?></h3>
 		<p><?=$news['description']?></p>
 
-
-
-      <!--   <p>
-            <?=$news['description'] ?>
-        </p>     -->
     </div>
     <div class="null"></div>
 </div>
