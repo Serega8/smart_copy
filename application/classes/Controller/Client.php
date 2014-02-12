@@ -358,10 +358,22 @@ class Controller_Client extends Controller_Template {
             case 'list_categories':
                 echo 'list_categories';
                 $view = View::factory('client/categories');
-                $model = ORM::factory('Categories');
-                $view->categories = $model->list_categories();
-                $this->template->seo = $model->seo($action);
+                //$model = ORM::factory('Categories');
+                $model = ORM::factory('Products');
+               // $view->categories = $model->list_categories();
+               // $this->template->seo = $model->seo($action);
+                 $all = $model->get_tree(true);
+                $view->categories = $all['main'];
+                $view->sub = $all['sub'];
+                $this->template->seo = ORM::factory('Categories')->seo($action);
+                
                 $this->template->content = $view;
+                
+                
+                
+               
+
+
                 break;
 
 

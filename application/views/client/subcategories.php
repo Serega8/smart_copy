@@ -1,5 +1,6 @@
-<!--<pre>-->
-<? //print_r($articles); die;?>
+
+<pre>
+<? print_r($articles); die;?>
 <?// if (!empty($subcategories)) { ?>
     <? //foreach ($subcategories as $subcategory) { ?>
         <!--<div class="categories">-->
@@ -29,15 +30,15 @@
 <? echo $v['name_translit'];?>
 <? endforeach; die;?>
 
-<div class="polosa" id="serv">
+<!--<div class="polosa" id="serv">
 	<ul>
 		<li><a href="/categories">Услуги</a></li>
 		<li class="empty"><i class="fa fa-chevron-right"></i></li>
 		<li><a href="#">Заправка катриджей</a></li>
 		<div class="null"></div>
 	</ul>
-</div>
- <div class="s_content">
+</div>-->
+<!-- <div class="s_content">
     <div class="s_img">
         <img src="content/images/zapravka.png">
     </div>
@@ -81,4 +82,4 @@
         </form>
     </div>
     <div class="clear"></div>
-</div>
+</div>-->

@@ -1,4 +1,4 @@
-<? //echo "<pre>";
+<? // echo "<pre>";
 //print_r($categories); die;?>
 <div class="polosa news" id="serv5">
 	<ul>
@@ -26,21 +26,29 @@
                         
                         <ul>
 				<li>
-					<a href="#"><?=$category['category_name'];?></a>
+					<a href="/catalog/<?=$category['translit_name'];?>"><?=$category['name'];?></a>
 					<ul>
 						<li>
-							<a href="#">Подкатегория</a>
-							<ul>
-								<li>
-									<a href="#">Подкатегория 2</a>
-								</li>
-								<li>
-									<a href="#">Подкатегория 2</a>
-								</li>
-								<li>
-									<a href="#">Подкатегория 2</a>
-								</li>
-							</ul>
+                                                    <? if (!empty($sub)) : ?>
+                                                        
+                                                            <? foreach ($sub as $s) : ?>
+                                                                <? if($category['id'] == $s['pid']):?>
+                                                            <a href="/catalog/<?=$category['translit_name'];?>/<?=$s['sub_translit']?>"><?=$s['sub_name']?></a>
+<!--                                                            <ul>
+                                                                    <li>
+                                                                            <a href="#">Подкатегория 2</a>
+                                                                    </li>
+                                                                    <li>
+                                                                            <a href="#">Подкатегория 2</a>
+                                                                    </li>
+                                                                    <li>
+                                                                            <a href="#">Подкатегория 2</a>
+                                                                    </li>
+                                                            </ul>-->
+                                                            <? endif; ?>
+                                                            <? endforeach; ?>
+                                                        
+                                                    <? endif; ?>
 						</li>
 						
 					</ul>
