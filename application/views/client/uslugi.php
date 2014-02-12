@@ -1,5 +1,5 @@
-<? //echo '<pre>';
-//print_r($uslugi); die;?>
+<? echo '<pre>';
+print_r($uslugi); die;?>
 <div class="polosa news" id="serv3">
     <ul>
 		<li><a href="/uslugi">Услуги</a></li>
