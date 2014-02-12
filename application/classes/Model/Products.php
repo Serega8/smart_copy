@@ -439,6 +439,7 @@ class Model_Products extends ORM {
             $res['img_url'] = $img->img_url;
             $res['img_url_small'] = $img->img_url_small;
             $res['date'] = $inf->date;
+            $res['cost'] = $inf->cost;
             $res['status'] = $inf->status;
             $products[] = $res;
         }
