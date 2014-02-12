@@ -3,16 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/review.php</file>
-            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Subcategories.php</file>
-            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/subcategories.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi_info.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/otzivi.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/feedback.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/content/css/style.less</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/uslugi.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/contacts.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/news.php</file>
-            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/index.php</file>
-            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/service.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Contacts.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/classes/Model/Articles.php</file>
             <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/template.php</file>
+            <file>file:/home/intellectit/Документы/проекты/smartcopy.by/application/views/client/company.php</file>
         </group>
     </open-files>
 </project-private>
