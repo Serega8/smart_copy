@@ -2,7 +2,7 @@
 	<ul>
 		<li><a href="/">Главная</a></li>
 	    <li class="empty"><i class="fa fa-chevron-right" id="blue_color"></i></li>
-    	<li><a href="/about">О компании</a></li>
+    	<li><a href="/company">О компании</a></li>
     	<div class="null"></div>
 	</ul>
 </div>

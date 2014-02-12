@@ -9,9 +9,9 @@
       для восстановления ж.д. id="serv4"  
 -->
     <ul>
-        <li><a href="#">Услуги</a></li>
+        <li><a href="/uslugi">Услуги</a></li>
         <li class="empty"><i class="fa fa-chevron-right"></i></li>
-        <li><a href="#"><?=$uslugi['name'] ?></a></li>
+        <li><a href="/uslugi/<?=$uslugi['name_translit']?>"><?=$uslugi['name'] ?></a></li>
         <div class="null"></div>
     </ul>
 </div>
