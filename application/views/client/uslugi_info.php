@@ -1,13 +1,12 @@
-<? //print_r($uslugi); die;?>
-<p><a href="/uslugi"><--- Вернуться ко всем услугам</a></p>
-
-
-<div class="polosa news" id="serv3"> 
- <!-- для заправки id="serv1" 
-      для монтажа id="serv2"
-      для серверного оборудования id="serv"
-      для восстановления ж.д. id="serv4"  
--->
+<? if($uslugi['name_translit'] == 'vosstanovlenie-zhestkih-diskov'):?>
+<div class="polosa news" id="serv4"> 
+<? elseif($uslugi['name_translit'] == 'servernoe-oborudovanie'):?>  
+<div class="polosa news" id="serv">
+<? elseif($uslugi['name_translit'] == 'montazh-lokaljnyh-setey'):?>  
+<div class="polosa news" id="serv2">
+<? elseif($uslugi['name_translit'] == 'zapravka-kartridzhey'):?>  
+<div class="polosa news" id="serv1">
+<? endif;?>    
     <ul>
         <li><a href="/uslugi">Услуги</a></li>
         <li class="empty"><i class="fa fa-chevron-right"></i></li>
@@ -26,7 +25,6 @@
         </p>    
     </div>
 </div>
-
 
 <? if ($uslugi['name_translit'] == 'zapravka-kartridzhey'):?>
 
