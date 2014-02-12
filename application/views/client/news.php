@@ -14,8 +14,8 @@
         </div>
         <div class="n_right">
             <h3><?=$new['name']?></h3>
-            <h3><?=$new['date']?></h3>
-			<p><?=$new['description']?></p>
+            <h3>дата: <?=$new['date']?></h3>
+			<p><?=$new['descr']?></p>
 			<p class="dalee"> <?=HTML::anchor("/news/".$new['name_translit'], 'Читать далее');?></p>
 		</div>
         <div class="clear"></div>
