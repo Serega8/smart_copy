@@ -31,7 +31,7 @@
         </div><!-- kontakt_info -->
         <div class="obratnaya_svyaz">
             <h2>Форма обратной связи</h2>
-            <div id="feedback">
+      
     <? if ($msg !== null) { ?>
         <div class="errors"><?= $msg; ?></div>
     <? } ?>
@@ -43,33 +43,37 @@
                 case 'input':
                     ?>
                     
-                    <input type="<?= $ex['type']; ?>" size="20"  name="<?= $ex['id']; ?>" class="form-element" placeholder="<?= $ex['placeholder']; ?>" value="" required/>
+                    <input type="<?= $ex['type']; ?>" size="20"  name="<?= $ex['id']; ?>" class="form-element" placeholder="<?= $ex['placeholder'] ?>" value="" required/>
                     
                     <?
                     break;
                 case 'textarea':
                     ?>
-                     <div class="wrap-message">
-                    <textarea  cols="47" rows="8" name="<?= $ex['id']; ?>" class="" placeholder="<?= $ex['placeholder']; ?>"></textarea>
+                    <div class="wrap-message">
+                    <textarea  cols="47" rows="8" name="<?= $ex['id']; ?>" class="" placeholder="<?= $ex['placeholder'] ?>"></textarea>
                     </div>
-                    <div class="null"></div>
+                    
                     <?
                     break;
+                    ?>
+                    <div class="null"></div>
+                      <?
                 default:
                     ?>
-                    Unknown tag;
+                    <div> Unknown tag; </div>
                     <?
                     break;
             }
         }
         ?>
         </div>
-             <img src="/file.png?<?=date('U');?>" alt="13" style="float:left"/>
-                <div class="inputArea" >
-                    <input type="text" name="txtpic" class="form-element" style="float:left"/> 
-                </div>
-        <input type="submit" id="submit-form" name="submit-form" class="submit-button"  value="Отправить"/>
 
+        <img src="/file.png?<?=date('U');?>" alt="13" style="float:left"/>
+        <div class="inputArea">
+            <input type="text" name="txtpic" class="form-element" style="float:left"/> 
+        </div>
+
+        <input type="submit" id="submit-form" name="submit-form" class="submit-button"  value="Отправить"/>
     </form>
 </div> 
             
