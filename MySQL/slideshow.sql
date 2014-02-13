@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Фев 12 2014 г., 19:20
+-- Время создания: Фев 13 2014 г., 14:53
 -- Версия сервера: 5.6.12-log
 -- Версия PHP: 5.4.12
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `slideshow` (
   `status` tinyint(4) NOT NULL DEFAULT '0',
   `sort` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
 
 --
 -- Дамп данных таблицы `slideshow`
@@ -54,12 +54,24 @@ INSERT INTO `slideshow` (`id`, `img_url`, `img_title`, `img_alt`, `img_link`, `s
 (10, '/content/images/slideshow/52e6a0b389f3c52e69699785a0b_slider2-jpg-.jpg', '', '', '', 3, 0),
 (11, '/content/images/slideshow/52e6a0b2cbcf552e6969097a29b_slider3-jpg-.jpg', '', '', '', 3, 0),
 (12, '/content/images/slideshow/52e6a0b389f3c52e69699785a0b_slider2-jpg-.jpg', '', '', '', 3, 0),
-(13, '/content/images/slideshow/52dfedde6d88cb_slider-jpg-.jpg', '', '', '', 0, 0),
-(14, '/content/images/slideshow/52e6a0b2cbcf552e6969097a29b_slider3-jpg-.jpg', '', '', '', 0, 0),
-(15, '/content/images/slideshow/52e6a0b389f3c52e69699785a0b_slider2-jpg-.jpg', '', '', '', 0, 0),
+(13, '/content/images/slideshow/52dfedde6d88cb_slider-jpg-.jpg', 'Заправка картриджей<br> в Минске всего за<br> <strong> 65 000</strong> рублей!', '', '', 0, 0),
+(14, '/content/images/slideshow/52e6a0b2cbcf552e6969097a29b_slider3-jpg-.jpg', '', '', '', 3, 0),
+(15, '/content/images/slideshow/52e6a0b389f3c52e69699785a0b_slider2-jpg-.jpg', '', '', '', 3, 0),
 (16, '/content/images/slideshow/52dfedde6d88cb_slider-jpg-.jpg', '', '', '', 3, 0),
 (17, '/content/images/slideshow/52e6a0b2cbcf552e6969097a29b_slider3-jpg-.jpg', '', '', '', 3, 0),
-(18, '/content/images/slideshow/52e6a0b389f3c52e69699785a0b_slider2-jpg-.jpg', '', '', '', 3, 0);
+(18, '/content/images/slideshow/52e6a0b389f3c52e69699785a0b_slider2-jpg-.jpg', '', '', '', 3, 0),
+(19, '/content/images/slideshow/news-jpg-.jpg', '', '', '', 3, 0),
+(20, '/content/images/slideshow/review-jpg-.jpg', '', '', '', 3, 0),
+(21, '/content/images/slideshow/news-jpg-.jpg', '', '', '', 3, 0),
+(22, '/content/images/slideshow/review-jpg-.jpg', '', '', '', 3, 0),
+(23, '/content/images/slideshow/news-jpg-.jpg', '', '', '', 3, 0),
+(24, '/content/images/slideshow/review-jpg-.jpg', '', '', '', 3, 0),
+(25, '/content/images/slideshow/news-jpg-.jpg', '', '', '', 3, 0),
+(26, '/content/images/slideshow/review-jpg-.jpg', '', '', '', 3, 0),
+(27, '/content/images/slideshow/news-jpg-.jpg', '', '', '', 3, 0),
+(28, '/content/images/slideshow/review-jpg-.jpg', '', '', '', 3, 0),
+(29, '/content/images/slideshow/news-jpg-.jpg', '', '', '', 0, 0),
+(30, '/content/images/slideshow/review-jpg-.jpg', '', '', '', 0, 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
