@@ -7,8 +7,8 @@
         <? foreach ($styles as $style) : ?>
             <?= HTML::style($style); ?>
         <? endforeach; ?>
-       
-        <title><? if (!empty($seo)) echo $seo['t']; ?></title>
+        <title><? if (!empty($seo)) {echo $seo['t'];}
+                ?></title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta name="description" content="<? if (!empty($seo)) echo $seo['d']; ?>">
         <meta name="keywords" content="<? if (!empty($seo)) echo $seo['k']; ?>">

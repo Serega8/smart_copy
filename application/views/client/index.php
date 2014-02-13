@@ -8,7 +8,6 @@
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             </ol>
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <? $t = 0; ?>
@@ -18,7 +17,9 @@
                     	
                     	<div class="carousel-caption">
                             <h3 class="slider_caption"><?= $slide['img_title']; ?></h3>
-                            <?=HTML::anchor('#', 'Подробнее', array('class' => 'btn1 btn-large btn-primary'));?>
+                            <? if($slide['id'] == 13) :?>
+                            <?=HTML::anchor('/uslugi/zapravka-kartridzhey', 'Подробнее', array('class' => 'btn1 btn-large btn-primary'));?>
+                            <? endif;?>
                         </div>
                     </div>
                 <? endforeach; ?>

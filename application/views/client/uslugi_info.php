@@ -14,7 +14,6 @@
         <div class="null"></div>
     </ul>
 </div>
-
  <div class="s_content">
     <div class="s_img">
         <img src="<?=$uslugi['img_url'] ?>">
@@ -35,10 +34,9 @@
             <div class="c1">
                 <h2 class="grey">Производитель</h2>
                 <select> 
-                    <option>wwwwwwwww</option>
-                    <option>eeeeeeeee</option>
-                    <option>ssssssss</option>
-                    <option>fffffffff</option>                        
+                    <? foreach($brands as $brand):?>
+                    <option><?=$brand['name'];?></option>
+                    <? endforeach;?>
                 </select>    
             </div>    
             <div class="c1">

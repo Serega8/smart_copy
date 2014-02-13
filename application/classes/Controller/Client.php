@@ -22,6 +22,7 @@ class Controller_Client extends Controller_Template {
         $categories = ORM::factory('Products')->get_tree(true);
         $this->template->menu = $categories['main'];
         $this->template->sub_menu = $categories['sub'];
+        
         $this->template->smartcopy = ORM::factory('Articles')->article('smartkopi');
         $this->template->logotip = ORM::factory('Articleimages')->get_images(3);
         //$this->template->feedback = ORM::factory('Feedback')->get_all_tags();
@@ -159,6 +160,7 @@ class Controller_Client extends Controller_Template {
             case 'uslugi_info':
                 $view = View::factory('client/uslugi_info');
                 $uslugi = ORM::factory('Articles')->article($level2);
+                $view->brands = ORM::factory('Brands')->list_brands();
                 $view->uslugi = $uslugi;
                 $this->template->content = $view;
                 break;
@@ -361,7 +363,6 @@ class Controller_Client extends Controller_Template {
              * Весь каталог, т.е все главные категории (1-й уровень);
              */
             case 'list_categories':
-                echo 'list_categories';
                 $view = View::factory('client/categories');
                 //$model = ORM::factory('Categories');
                 $model = ORM::factory('Products');
@@ -383,7 +384,6 @@ class Controller_Client extends Controller_Template {
                 break;
 
             case 'list_sub_categories':
-                echo 'list_sub_categories';
                 $model_sub_categories    = ORM::factory('Subcategories');
                 $all_sub_categories      = $model_sub_categories->list_sub_categories($level2, true);
                 $all_products            = ORM::factory('Products')->list_category_products($level2, true);
@@ -407,7 +407,6 @@ class Controller_Client extends Controller_Template {
 
 
             case 'list_products':
-                echo 'list_products';
                 $model_products = ORM::factory('Products');
                 $model_sub_categories = ORM::factory('Subcategories');
                 $count = $model_sub_categories->detect_sp($level2, $level3);

@@ -10,20 +10,11 @@
 </div>
 <!-- End хлебная крошка -->
 
-
-
-
 <div class="content_data">
         <div class="menu">
 
 <? if (!empty($categories)) : ?>
     <? foreach ($categories as $category) : ?>
-                    
-       
-<!--            <a href="/catalog/<?//=$category['translit_name'];?>">
-                <img src="<?//= $category['img_url']; ?>" alt="<?//= $category['img_alt']; ?>" title="<?//= $category['img_title']; ?>"/>
-            </a>-->
-                        
     <ul>
         <li>
             <a href="/catalog/<?=$category['translit_name'];?>"><?=$category['name'];?></a>
@@ -46,7 +37,7 @@
                                       
 <? endforeach; ?>
 <? endif; ?>
-</div>  <!-- menu -->
+</div> 
 <!-- Menu END -->
 
 
@@ -67,9 +58,6 @@
                     <p><?= $product['cost']; ?></p>
                 </td>
             </tr>
-                        <!--<a href='/catalog/<?//= $level2; ?>/<?//= $level3; ?>/<?//= $product['translit_name']; ?>'>-->
-                            <!--<img class="img_product" src='<?//= $product['img_url_small']; ?>'>-->
-                        <!--</a>-->
         <? } ?>
     
       </table>
