@@ -377,6 +377,7 @@ class Controller_Client extends Controller_Template {
                 
                 
                 
+                
                 $this->template->seo = ORM::factory('Categories')->seo($action);
                 $this->template->content = $view;
                 break;

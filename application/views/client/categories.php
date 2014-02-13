@@ -35,8 +35,7 @@
 <? endif; ?>
                         </div>
 <!-- TABLE START -->  
-<pre>
-      <? print_r($products); die;?>          
+         
 <? if (!empty($products)) { ?>
 <div class="table">
      <table class="products">
@@ -51,7 +50,7 @@
                     <p><?= $product['product_name']; ?></p>
                 </td>
                 <td>
-                    <p><?//= $product['cost']; ?></p>
+                    <p><?= $product['cost']; ?></p>
                 </td>
             </tr>
         <? } ?>

@@ -155,6 +155,7 @@ class Model_Products extends ORM {
             $res['sub_category_id'] = $data->sub_category_id;
             $res['product_name'] = $data->product_name;
             $res['product_translit'] = $data->name_translit;
+            $res['cost'] = $data->cost;
             $products[] = $res;
         }
 

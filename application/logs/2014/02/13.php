@@ -336,3 +336,12 @@
 #12 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #13 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
 #14 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/views/client/categories.php:54
+2014-02-13 20:18:45 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: products ~ APPPATH/classes/Controller/Client.php [ 376 ] in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php:376
+2014-02-13 20:18:45 --- DEBUG: #0 /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php(376): Kohana_Core::error_handler(8, 'Undefined index...', '/home/intellect...', 376, Array)
+#1 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Controller.php(84): Controller_Client->action_catalog()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Client))
+#4 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/intellectit/Документы/проекты/smartcopy.by/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 /home/intellectit/Документы/проекты/smartcopy.by/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/intellectit/Документы/проекты/smartcopy.by/application/classes/Controller/Client.php:376
