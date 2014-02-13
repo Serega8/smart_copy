@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Фев 12 2014 г., 19:21
+-- Время создания: Фев 13 2014 г., 14:54
 -- Версия сервера: 5.6.12-log
 -- Версия PHP: 5.4.12
 
@@ -47,11 +47,11 @@ INSERT INTO `article_images` (`id`, `parent_id`, `img_url`, `img_alt`, `img_titl
 (3, 3, '/content/images/article_images/smart_copy-jpg-.jpg', '', '', NULL, NULL),
 (4, 4, NULL, '', '', NULL, NULL),
 (5, 7, '/content/images/article_images/montazh-jpg-.jpg', '', '', NULL, NULL),
-(6, 11, '/content/images/article_images/1v-jpg-.jpg', '', '', NULL, NULL),
-(7, 14, '/content/images/article_images/2v-jpg-.jpg', '', '', NULL, NULL),
-(8, 15, '/content/images/article_images/3v-jpg-.jpg', '', '', NULL, NULL),
-(9, 16, '/content/images/article_images/post-148611-056885500-201315472225_thumb1-1-jpg-.jpg', '', '', NULL, NULL),
-(10, 17, '/content/images/article_images/3v-jpg-.jpg', '', '', NULL, NULL),
+(6, 11, '/content/images/article_images/chrysanthemum-jpg-.jpg', '', '', NULL, NULL),
+(7, 14, '/content/images/article_images/desert-jpg-.jpg', '', '', NULL, NULL),
+(8, 15, '/content/images/article_images/hydrangeas-jpg-.jpg', '', '', NULL, NULL),
+(9, 16, '/content/images/article_images/koala-jpg-.jpg', '', '', NULL, NULL),
+(10, 17, '/content/images/article_images/penguins-jpg-.jpg', '', '', NULL, NULL),
 (11, 18, '/content/images/article_images/1v-jpg-.jpg', '', '', NULL, NULL),
 (12, 6, '/content/images/article_images/zapravka-png-.png', '', '', NULL, NULL),
 (13, 19, '/content/images/article_images/kanalizacia_plastik_all_clip_image0021-3-jpg-.jpg', '', '', NULL, NULL),

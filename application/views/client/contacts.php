@@ -1,6 +1,17 @@
+
+<div class="polosa news" id="serv3">
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li class="empty"><i class="fa fa-chevron-right" id="blue_color"></i></li>
+        <li><a href="/contacts">Контакты</a></li>
+        <div class="null"></div>
+    </ul>
+</div>
+
+
 <div class="map">
             <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=C1vQNUUyKkIRlGElm9BqiOQWYdQvxVUv"></script>
-        </div> <!-- map -->
+</div> <!-- map -->
         <div class="contact_content">
         <div class="kontakt_info">
             <h2>Контактная информация</h2>

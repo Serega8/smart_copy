@@ -1,4 +1,3 @@
-
 <div class="polosa news" id="serv3">
     <ul>
 		<li><a href="/uslugi">Услуги</a></li>

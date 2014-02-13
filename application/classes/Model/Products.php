@@ -121,7 +121,10 @@ class Model_Products extends ORM {
         $categories = array();
         $sub_categories = array();
         $products = array();
-        $category_data = $model->sub_categories->categories->where('status', $op, $status)->find_all();
+        $category_data = $model->sub_categories->categories
+                ->where('status', $op, $status)
+                //->order_by('id', 'DESC')
+                ->find_all();
         foreach ($category_data as $data) {
             $res['name'] = $data->category_name;
             $res['date'] = $data->date;

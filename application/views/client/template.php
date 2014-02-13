@@ -54,36 +54,37 @@
 		<nav> 
 			<ul> 
 				<li>
-                                    <?=HTML::anchor('/', 'Главная');?>
-                                </li>
+                <?=HTML::anchor('/', 'Главная');?>
+                </li>
 				<li>
-                                    <?=HTML::anchor('/company/', 'О компании');?>
-                                </li>
-                                <li>
-                                    <?=HTML::anchor('/uslugi/', 'Услуги');?>
-                                </li>
-                                <li>
-                                    <?=HTML::anchor('/catalog/', 'Каталог');?>
-                                </li>
-                                <li>
-                                    <?=HTML::anchor('/news/', 'Новости');?>
-                                </li>
+                <?=HTML::anchor('/company/', 'О компании');?>
+                </li>
+                <li>
+                <?=HTML::anchor('/uslugi/', 'Услуги');?>
+                </li>
+                <li>
+                <?=HTML::anchor('/catalog/', 'Каталог');?>
+                </li>
+                <li>
+                <?=HTML::anchor('/news/', 'Новости');?>
+                </li>
 				<li>
-                                    <?=HTML::anchor('/otzivi/', 'Отзывы');?>
-                                </li>
-                                <li>
-                                    <?=HTML::anchor('/contacts/', 'Контакты');?>
-                                </li>
+                <?=HTML::anchor('/otzivi/', 'Отзывы');?>
+                </li>
+                <li>
+                <?=HTML::anchor('/contacts/', 'Контакты');?>
+                </li>
 			</ul>
                         <!--схема проезда начало-->
-                            <div  id="sheme"> <?=HTML::anchor('/contacts', 'Схема проезда');?></div>
-                            <div class="clear"></div>
+
+                <div  id="sheme"> <?=HTML::anchor('/contacts_scheme/', 'Схема проезда');?></div>
+                <div class="clear"></div>
                         <!--схема проезда конец-->
 		</nav>
                             <!--NAV END-->
                             </div>
                             
-                            <div id="content">
+                <div id="content">
 
                                 <?= $content; ?>
                                 

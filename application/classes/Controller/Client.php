@@ -180,6 +180,11 @@ class Controller_Client extends Controller_Template {
         $this->template->content = $view;
     }
 
+    public function action_contacts_scheme() {
+        $view = View::factory('client/contacts_scheme');
+        $this->template->content = $view;
+    }
+
     public function action_poll() {
         if ($this->request->post()) {
             if (is_numeric($_POST['poll'])) {
@@ -360,23 +365,21 @@ class Controller_Client extends Controller_Template {
                 $view = View::factory('client/categories');
                 //$model = ORM::factory('Categories');
                 $model = ORM::factory('Products');
+                
+                
+       
                // $view->categories = $model->list_categories();
                // $this->template->seo = $model->seo($action);
                  $all = $model->get_tree(true);
                 $view->categories = $all['main'];
                 $view->sub = $all['sub'];
+                $view->products = $all['product'];
+                
+                
+                
                 $this->template->seo = ORM::factory('Categories')->seo($action);
-                
                 $this->template->content = $view;
-                
-                
-                
-               
-
-
                 break;
-
-
 
             case 'list_sub_categories':
                 echo 'list_sub_categories';
@@ -384,6 +387,12 @@ class Controller_Client extends Controller_Template {
                 $all_sub_categories      = $model_sub_categories->list_sub_categories($level2, true);
                 $all_products            = ORM::factory('Products')->list_category_products($level2, true);
                 $view                    = View::factory('client/subcategories');
+                
+                $model = ORM::factory('Products');
+                $all = $model->get_tree(true);
+                $view->categories = $all['main'];
+                $view->sub = $all['sub'];
+                
                 $this->template->seo     = ORM::factory('Categories')->get_сategory_info($level2);
                 $view->level2            = $level2;
                 $view->products          = $all_products;
@@ -406,7 +415,12 @@ class Controller_Client extends Controller_Template {
                     $all_products = $model_products->list_products($level2, $level3);
 
                     $view = View::factory('client/products');
-
+                    
+                    $model = ORM::factory('Products');
+                    $all = $model->get_tree(true);
+                    $view->categories = $all['main'];
+                    $view->sub = $all['sub'];
+                    
                     $this->template->seo = $model_sub_categories->get_сategory_info($level2, $level3);
                     $view->level2 = $level2;
                     $view->level3 = $level3;
