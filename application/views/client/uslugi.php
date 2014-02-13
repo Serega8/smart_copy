@@ -44,7 +44,7 @@
 				<h1><?=$kt['name'][0]?></h1>
 				<h2><?=$kt['name'][1]?></h2>
 				<p><?=$articles[7]['descr']?> </p>
-                                    <?=HTML::anchor('katalog-tovarov', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('catalog', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 		</ul>
 	</section>

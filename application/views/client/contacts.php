@@ -53,7 +53,7 @@
         }
         ?>
         </div>
-             <img src="/file.png?<?=date('U');?>" alt="13" style="float:left"/>
+                <img src="/file.png?<?=date('U');?>" alt="13" style="float:left"/>
                 <div class="inputArea" >
                     <input type="text" name="txtpic" class="form-element" style="float:left"/> 
                 </div>

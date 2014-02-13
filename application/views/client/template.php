@@ -76,7 +76,7 @@
                                 </li>
 			</ul>
                         <!--схема проезда начало-->
-                            <div  id="sheme"> <?=HTML::anchor('#', 'Схема проезда');?></div>
+                            <div  id="sheme"> <?=HTML::anchor('/contacts', 'Схема проезда');?></div>
                             <div class="clear"></div>
                         <!--схема проезда конец-->
 		</nav>
