@@ -23,42 +23,84 @@
         <? } ?>
     <? } ?>
 </div>
-<div id="images">
-    <? if (!empty($images)) { ?>
-        <? foreach ($images as $k => $i) { ?>
 
-            <a href="<?= $i['img_url']; ?>">
-                <img class="p-images" src="<?= $i['img_url_small']; ?>" title="<?= $i['img_alt']; ?>" alt="<?= $i['img_alt']; ?>"/>
-            </a>
+<!-- Хлебная крошка -->
+<!-- <div class="polosa news" id="serv5">
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li class="empty"><i class="fa fa-chevron-right"></i></li>
+        <li><a href="/catalog">Каталог</a></li>
+        <div class="null"></div>
+    </ul>
+</div> -->
+<!-- End хлебная крошка -->
 
-        <? } ?>
-    <? } ?>
-</div>
-<div id="reviews">
-    <? if (!empty($reviews)) { ?>
-        <? foreach ($reviews as $k => $i) { ?>
-            <div>
-                <p><?= $i['name']; ?></p>
-                <p><?= $i['text']; ?></p>
-                <p><?= $i['val']; ?></p>
-                <p><?= date('Y-m-d / H:i:s', $i['date']); ?></p>
-            </div>
-        <? } ?>
-    <? } ?>
-</div>
-<div>
-    <? if ((isset($msg) ) && $msg !== null) { ?>
-        <div class="errors">
-            <p><?= $msg; ?></p>
-        </div>
-    <? } ?>
+<!-- <div class="content_data">
+        <div class="menu">
 
-    <form action="" method="POST">
-        <label>Имя</label><input type="text" name="name" required/><br/>
-        <label>E-mail</label><input type="email" name="email" required /><br/>
-        <label>оценка</label><input type="range" name="val" min="1" max="5" step="0.1"/><br/>
-        <label>Текст сообщения</label><textarea name="text" required></textarea><br/>
-        <img src="/file.png?<?= date('U'); ?>" alt="13"/><input placeholder="Code" type="text" name="txtpic"/><br/>
-        <button name="submit">Добавить</button>
-    </form>
-</div>
+<? if (!empty($categories)) : ?>
+    <? foreach ($categories as $category) : ?>
+                -->     
+       
+<!--            <a href="/catalog/<?//=$category['translit_name'];?>">
+                <img src="<?//= $category['img_url']; ?>" alt="<?//= $category['img_alt']; ?>" title="<?//= $category['img_title']; ?>"/>
+            </a>-->
+                        
+    <!-- <ul>
+        <li>
+            <a href="/catalog/<?=$category['translit_name'];?>"><?=$category['name'];?></a>
+                <ul>
+                    <li>
+                    <? if (!empty($sub)) : ?>
+                                                        
+                    <? foreach ($sub as $s) : ?>
+                        <? if($category['id'] == $s['pid']):?>
+                            <a href="/catalog/<?=$category['translit_name'];?>/<?=$s['sub_translit']?>"><?=$s['sub_name']?></a>
+                            <ul>
+                                    <li>
+                                        <a href="#">Подкатегория 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Подкатегория 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Подкатегория 2</a>
+                                    </li>
+                                </ul>
+                        <? endif; ?>
+                    <? endforeach; ?>
+                                                        
+                    <? endif; ?>
+                    </li>                       
+                </ul>
+        </li>                
+    </ul>    
+                        <br /><br />
+                                      
+<? endforeach; ?>
+<? endif; ?>
+</div>  --> <!-- menu -->
+<!-- Menu END -->
+
+<!-- TABLE START -->               
+<!-- <div class="table">
+    <table class="products">
+        <tr>
+            <td class="th">Название товара</td>
+            <td class="th">Цена</td>
+        </tr>
+        <tr>
+            <td>Kuocera TaskAlfa 180 - 18стр./мин. копир, A3 33 мб 600 dpi нагрузка 20000</td>
+            <td>6 310 903</td>
+        </tr>
+        <tr>
+             <td>Kuocera TaskAlfa 180 - 18стр./мин. копир, A3 33 мб 600 dpi нагрузка 20000</td>
+            <td>6 310 903</td>
+        </tr>
+     
+    </table>
+</div>  --><!-- table -->
+
+<!-- TABLE END -->
+<!-- <div class="null"></div>
+</div> --> <!-- content_data -->

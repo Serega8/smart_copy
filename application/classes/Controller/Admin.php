@@ -980,8 +980,8 @@ class Controller_Admin extends Controller_Template {
             }
         }
         if (!empty($_FILES)) {
-            $resize['w'] = 1015;
-            $resize['h'] = 390;
+            $resize['w'] = 1140;
+            $resize['h'] = 400;
             $filename = $this->_save_image($_FILES['file'], '/content/images/slideshow/', $resize);
             if ($filename) {
                 if (ORM::factory('Slideshow')->insert_image($filename)) {

@@ -18,6 +18,9 @@
 			<li id="grey">
 				<h1><?=$zapravka['name'][0];?></h1>
 				<h2><?=$zapravka['name'][1];?></h2>
+
+				<!-- <p><?=Text::limit_chars($new['descr'],600,'...');?></p> -->
+				
 				<p><?=$articles[3]['descr'];?></p>
                                     <?=HTML::anchor('uslugi/zapravka-kartridzhey', '<i class="fa fa-chevron-right"></i>');?>
 			</li>

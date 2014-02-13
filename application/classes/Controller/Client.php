@@ -180,6 +180,11 @@ class Controller_Client extends Controller_Template {
         $this->template->content = $view;
     }
 
+    public function action_contacts_scheme() {
+        $view = View::factory('client/contacts_scheme');
+        $this->template->content = $view;
+    }
+
     public function action_poll() {
         if ($this->request->post()) {
             if (is_numeric($_POST['poll'])) {

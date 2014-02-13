@@ -18,7 +18,7 @@
                     	
                     	<div class="carousel-caption">
                             <h3 class="slider_caption"><?= $slide['img_title']; ?></h3>
-                            <?=HTML::anchor('#', 'Подробнее', array('class' => 'btn btn-large btn-primary'));?>
+                            <?=HTML::anchor('#', 'Подробнее', array('class' => 'btn1 btn-large btn-primary'));?>
                         </div>
                     </div>
                 <? endforeach; ?>
