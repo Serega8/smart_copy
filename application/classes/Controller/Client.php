@@ -623,7 +623,8 @@ class Controller_Client extends Controller_Template {
     }
 
     public static function captcha() {
-        $letters = 'ABCDEFGKIJKLMNOPQRSTUVWXYZ';
+        //$letters = 'ABCDEFGKIJKLMNOPQRSTUVWXYZ';
+        $letters = '1234567890';
         $caplen = 6;
         $width = 120;
         $height = 20;

@@ -51,7 +51,7 @@
                     <p><?= $product['product_name']; ?></p>
                 </td>
                 <td>
-                    <p><?= $product['cost']; ?></p>
+                    <p><?//= $product['cost']; ?></p>
                 </td>
             </tr>
         <? } ?>
