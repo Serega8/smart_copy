@@ -1,3 +1,4 @@
+<? $a = $_SERVER['REQUEST_URI'];?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,6 +9,10 @@
             <?= HTML::style($style); ?>
         <? endforeach; ?>
         <title><? if (!empty($seo)) {echo $seo['t'];}
+                 else if($a == '/company') {echo  "О компании";}
+                 else if($a == '/uslugi')  {echo  "Услуги";}
+                 else if($a == '/news')    {echo  "Новости";}
+                 else if($a == '/otzivi')  {echo  "Отзывы";}
                 ?></title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta name="description" content="<? if (!empty($seo)) echo $seo['d']; ?>">
@@ -36,27 +41,20 @@
 					<input type="text" class="spani" placeholder="Введите запрос"/>                    
                     <div class="null"></div>	
 				</form>	
-			    <div class="buton">
-                    <?=HTML::anchor('#', 'On-line консультант');?>
-				</div>
 			</article>
 		</section>
                 <!--HEAD END-->
-                
-                
-                
                         <div id="container">
-                            
                             
                             <div id="main_menu">
                                
                                <!--NAV START-->
 		<nav> 
 			<ul> 
-				<li>
+		<li>
                 <?=HTML::anchor('/', 'Главная');?>
                 </li>
-				<li>
+		<li>
                 <?=HTML::anchor('/company/', 'О компании');?>
                 </li>
                 <li>
@@ -68,7 +66,7 @@
                 <li>
                 <?=HTML::anchor('/news/', 'Новости');?>
                 </li>
-				<li>
+		<li>
                 <?=HTML::anchor('/otzivi/', 'Отзывы');?>
                 </li>
                 <li>
@@ -76,7 +74,6 @@
                 </li>
 			</ul>
                         <!--схема проезда начало-->
-
                 <div  id="sheme"> <?=HTML::anchor('/contacts_scheme/', 'Схема проезда');?></div>
                 <div class="clear"></div>
                         <!--схема проезда конец-->

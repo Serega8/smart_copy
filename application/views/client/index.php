@@ -78,7 +78,7 @@
 				
 				<p><?=$articles[7]['descr']?> </p>
 				<!--<a href="#"><img src="content/images/5c.jpg"></a>-->
-                                    <?=HTML::anchor('katalog-tovarov', '<i class="fa fa-chevron-right"></i>');?>
+                                    <?=HTML::anchor('catalog', '<i class="fa fa-chevron-right"></i>');?>
 			</li>
 		</ul>
 	</section>

@@ -10,7 +10,9 @@
 
 	<div class="stroka">
         <div class="n_left">
+            <a href="/news/<?=$new['name_translit'];?>">
 			<img src="<?=$new['img_url']?>">
+            </a>            
         </div>
         <div class="n_right">
             <h3><?=$new['name']?></h3>

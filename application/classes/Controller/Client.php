@@ -24,6 +24,7 @@ class Controller_Client extends Controller_Template {
         $this->template->sub_menu = $categories['sub'];
         
         $this->template->smartcopy = ORM::factory('Articles')->article('smartkopi');
+        //$this->template->articles = ORM::factory('Articles')->article();
         $this->template->logotip = ORM::factory('Articleimages')->get_images(3);
         //$this->template->feedback = ORM::factory('Feedback')->get_all_tags();
         $this->template->contacts = ORM::factory('Contacts')->get_contacts();
