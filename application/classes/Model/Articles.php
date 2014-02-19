@@ -81,6 +81,33 @@ class Model_Articles extends ORM {
         return $c;
     }
     
+    
+    public function otzivi() {
+        $model = ORM::factory('Articles');
+        $c = array();
+        $news             = ORM::factory('Articles')->all_articles();
+        $all = $model->where('status', '!=', '3')
+                ->and_where('keywords', '=', 'otzivi')
+                //->order_by('id', 'DESC')
+                ->find_all();
+        foreach ($all as $inf) {
+            $res['id'] = $inf->id;
+            $res['name'] = $inf->name;
+            $img = ORM::factory('Articleimages')->where('parent_id', '=', $res['id'])->limit(1)->find();
+            $res['img_url'] = $img->img_url;
+            $res['img_alt'] = $img->img_alt;
+            $res['img_title'] = $img->img_title;
+            $res['date'] = $inf->date;
+            $res['name_translit'] = $inf->name_translit;
+            $res['description'] = $inf->description;
+            $res['descr'] = $inf->descr;
+            $res['status'] = $inf->status;
+            $res['k'] = $inf->keywords;
+            $c[] = $res;
+        }
+        return $c;
+    }
+    
     public function uslugi() {
         $model = ORM::factory('Articles');
         $c = array();

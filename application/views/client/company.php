@@ -1,17 +1,14 @@
 <div class="polosa news" id="serv3">
-	<ul>
-		<li><a href="/">Главная</a></li>
-	    <li class="empty"><i class="fa fa-chevron-right" id="blue_color"></i></li>
-    	<li><a href="/company">О компании</a></li>
-    	<div class="null"></div>
-	</ul>
+    <ul>
+        <li><?= HTML::anchor('/', 'Главная'); ?></li>
+        <li class="empty"><i class="fa fa-chevron-right" id="blue_color"></i></li>
+        <li><?= HTML::anchor('/company', 'О компании'); ?></li>
+        <div class="null"></div>
+    </ul>
 </div>
-
-
-
- <div class="s_content">
+<div class="s_content">
     <div class="s_img">
-        <img src="content/images/pink.jpg">
+        <?= HTML::image('content/images/pink.jpg'); ?>
     </div>
     <div class="s_txt_m">
         <p>

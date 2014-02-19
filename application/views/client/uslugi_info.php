@@ -8,15 +8,15 @@
 <div class="polosa news" id="serv1">
 <? endif;?>    
     <ul>
-        <li><a href="/uslugi">Услуги</a></li>
+        <li><?= HTML::anchor('/uslugi', 'Услуги'); ?></li>
         <li class="empty"><i class="fa fa-chevron-right"></i></li>
-        <li><a href="/uslugi/<?=$uslugi['name_translit']?>"><?=$uslugi['name'] ?></a></li>
+        <li><?= HTML::anchor('/uslugi/'.$uslugi['name_translit'], $uslugi['name']); ?></li>
         <div class="null"></div>
     </ul>
 </div>
  <div class="s_content">
     <div class="s_img">
-        <img src="<?=$uslugi['img_url'] ?>">
+        <?= HTML::image($uslugi['img_url']); ?>
     </div>
     <div class="s_txt_m">
         <p>

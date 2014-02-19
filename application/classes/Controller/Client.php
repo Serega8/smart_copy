@@ -22,11 +22,8 @@ class Controller_Client extends Controller_Template {
         $categories = ORM::factory('Products')->get_tree(true);
         $this->template->menu = $categories['main'];
         $this->template->sub_menu = $categories['sub'];
-        
         $this->template->smartcopy = ORM::factory('Articles')->article('smartkopi');
-        //$this->template->articles = ORM::factory('Articles')->article();
         $this->template->logotip = ORM::factory('Articleimages')->get_images(3);
-        //$this->template->feedback = ORM::factory('Feedback')->get_all_tags();
         $this->template->contacts = ORM::factory('Contacts')->get_contacts();
         
 
@@ -139,7 +136,7 @@ class Controller_Client extends Controller_Template {
                 $uslugi = ORM::factory('Articles')->uslugi();
                 $view->uslugi = $uslugi;
 
-                // вывод услуг 
+         // вывод услуг 
          $articles         = ORM::factory('Articles')->all_articles();
          $zapravka['name'] = explode(' ', $articles[3]['name']);
          $montazh['name']  = explode(' ', $articles[4]['name']);
@@ -175,6 +172,12 @@ class Controller_Client extends Controller_Template {
     
     public function action_otzivi() {
         $view = View::factory('client/otzivi');
+        $otzivi         = ORM::factory('Articles')->otzivi();
+        $otzivi[] = explode('delimiter', $otzivi[0]['descr']);
+        $otzivi[] = explode('delimiter', $otzivi[1]['descr']);
+        $otzivi[] = explode('delimiter', $otzivi[2]['descr']);
+        $otzivi[] = explode('delimiter', $otzivi[3]['descr']);
+        $view->otzivi = $otzivi;
         $this->template->content = $view;
     }
     
@@ -185,6 +188,7 @@ class Controller_Client extends Controller_Template {
 
     public function action_contacts_scheme() {
         $view = View::factory('client/contacts_scheme');
+        $view->contacts = ORM::factory('Contacts')->get_contacts();
         $this->template->content = $view;
     }
 
@@ -314,6 +318,8 @@ class Controller_Client extends Controller_Template {
                 break;
         }
     }
+    
+   
 
     public function action_contacts() {
         $action = $this->request->action();
